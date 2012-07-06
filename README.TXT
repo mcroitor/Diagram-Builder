@@ -1,0 +1,2 @@
+Diagram Builder is dedicated to construct chess diagrams with different 
+properties, such as size, style and color.
