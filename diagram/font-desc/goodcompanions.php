@@ -11,8 +11,12 @@ $simbols["goodcompanions"]["2"] = chr(162);
 $simbols["goodcompanions"]["1"] = chr(162);
 
 $simbols["goodcompanions"]["|"] = chr(165);
-$simbols["goodcompanions"]["top"] = "1222222223"; //"!\"\"\"\"\"\"\"\"#";
-$simbols["goodcompanions"]["bottom"] = "6777777778";
+$_top = chr(166);
+$_bottom = chr(161);
+$simbols["goodcompanions"]["top"] = " ";// "1222222223"; //"!\"\"\"\"\"\"\"\"#";
+for($i = 0; $i != 8; ++$i) $simbols["goodcompanions"]["top"] .= $_top;
+$simbols["goodcompanions"]["bottom"] = " "; //"6777777778";
+for($i = 0; $i != 8; ++$i) $simbols["goodcompanions"]["bottom"] .= $_bottom;
 $simbols["goodcompanions"]["/"] = chr(162);
 
 $simbols["goodcompanions"]["tl"] = chr(163);

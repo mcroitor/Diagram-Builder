@@ -44,6 +44,7 @@ $color = array(
             #pieces img {border: 2px solid #fff; }
             #transform-position td { border: 1px solid #aaa; }
         </style>
+        <!-- script type="text/javascript" src="scripts/colorpicker.js"></script -->
         <script type="text/javascript">
             var rtftpl = '{\rtf0\ansi {\fonttbl{\f0\fbidi\fnil;}{\f1\fbidi\fswiss\fcharset2\fprq2 #charset#;}} #data#}';
 
@@ -191,12 +192,13 @@ foreach (glob("./diagram/fonts/*.ttf") as $font) {
                             }
                             ?>
                         </select>
+                        <!-- script>document.writeln(colorPickerDialog());</script -->
                         <select name="color" id="color" onChange="genLink();">
-                            <?php
-                            foreach ($color as $key => $value) {
-                                echo "<option value='{$key}' style='background-color:{$value};'>{$key}</option>";
-                            }
-                            ?>
+                        <?php
+                        foreach ($color as $key => $value) {
+                            echo "<option value='{$key}' style='background-color:{$value};'>{$key}</option>";
+                        }
+                        ?>
                         </select>
                         <br />
                     <!-- b>Text:</b><br /><input type="text" name="text" id="text" value="<?= $text ?>" /><br / -->
