@@ -44,6 +44,8 @@ function genLink()
     link_ = link_ + "&style=" + style_.options[style_.selectedIndex].text;
     color_ = document.getElementById("color");
     link_ = link_ + "&color=" + color_.options[color_.selectedIndex].value;
+    strip_ = document.getElementById("strip").checked;
+    link_ = link_ + "&strip=" + strip_;
     document.getElementById("dlink").setAttribute("href", link_);
 }
 

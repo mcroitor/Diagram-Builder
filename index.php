@@ -205,7 +205,9 @@ foreach (glob("./diagram/fonts/*.ttf") as $font) {
                         <b>FEN:</b><br />
                         <input type="text" name="fen" id="fen" value="<?= $fen ?>" onChange="genBoard(this.value)" />
                         <br /><input type="button" value="clear" onClick="clearAll();" />
-                        <input type="button" value="preview" onClick="previewD();" /></form>
+                        <input type="button" value="preview" onClick="previewD();" />
+                        <br />Strip diagram: <input type="checkbox" name="strip" id="strip" onchange="genLink();" />
+                    </form>
                 </td>
                 <td valign="top">
                     <h4 align="center">preview</h4><div id="preview"><img src="./diagram/?fen=88888888&size=30" /></div><br />

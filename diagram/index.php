@@ -6,6 +6,8 @@ if (!isset($_GET["fen"])) {
 
 $size = (isset($_GET["size"]) && ((int) $_GET["size"]) > 0) ? $_GET["size"] : 22;
 $style = isset($_GET["style"]) ? $_GET["style"] : "alpha";
+$strip = isset($_GET["strip"]) ? $_GET["strip"] : false;
+//echo "strip = ".$strip;
 
 $color = isset($_GET["color"]) ? $_GET["color"] : "black";
 
@@ -30,7 +32,7 @@ function pt2px($pt) {
 }
 
 function fen2board($fen, $style = "alpha") {
-    $alpha = array('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h');
+    //$alpha = array('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h');
     $num = array('1', '2', '3', '4', '5', '6', '7', '8');
     if (file_exists("./font-desc/{$style}.php"))
         require_once("./font-desc/{$style}.php");
@@ -95,7 +97,7 @@ function fen2board($fen, $style = "alpha") {
     return $board;
 }
 
-function board2diag($board, $style, $size, $color, $strip = true) {
+function board2diag($board, $style, $size, $color) {
     $delta = ($style == "spsl" or $style == "alpha2") ? $size / 2 : 0;
     $diagram = imagecreatetruecolor($size * 10, $size * 10 + $delta);
 
@@ -117,21 +119,29 @@ function board2diag($board, $style, $size, $color, $strip = true) {
     foreach ($board as $index => $line) {
         imagefttext($diagram, px2pt($size), 0, 0, ($index + 1) * $size, $colors[$color], "./fonts/$style.ttf", $line);
     }
-    if($strip){
-        $stripped = imagecreatetruecolor($size * 8.4, $size * 8.4+$delta/2);
-        imagecopy($stripped, $diagram, 0, 0, 0.8*$size, 0.8*$size, $size * 8.4, $size * 8.4+$delta/2);
+    return $diagram;
+}
+
+function fen2diag($fen, $style = "alpha", $size = 23, $color = "black", $s = false) {
+    $board = fen2board($fen, $style);
+    //echo "strip = ".$s;
+    $diagram = board2diag($board, $style, $size, $color);
+    
+    if($s == "true"){
+        $stripped = imagecreatetruecolor($size * 9, $size * 9);
+        if($style === "isdiagram"){
+            
+            imagecopy($stripped, $diagram, 0, 0, 0, 0.85*$size, $size * 9, $size * 9);
+        }
+        else{
+            imagecopy($stripped, $diagram, 0, 0, 0.5*$size, 0.5*$size, $size * 9, $size * 9);
+        }
         return $stripped;
     }
     return $diagram;
 }
 
-function fen2diag($fen, $style = "alpha", $size = 23, $color = "black") {
-    $board = fen2board($fen, $style);
-    $diagram = board2diag($board, $style, $size, $color);
-    return $diagram;
-}
-
-$src = fen2diag($_GET["fen"], $style, $size, $color);
+$src = fen2diag($_GET["fen"], $style, $size, $color, $strip);
 
 header('Content-type: image/png');
 imagepng($src);
