@@ -95,7 +95,7 @@ function fen2board($fen, $style = "alpha") {
     return $board;
 }
 
-function board2diag($board, $style, $size, $color) {
+function board2diag($board, $style, $size, $color, $strip = true) {
     $delta = ($style == "spsl" or $style == "alpha2") ? $size / 2 : 0;
     $diagram = imagecreatetruecolor($size * 10, $size * 10 + $delta);
 
@@ -116,6 +116,11 @@ function board2diag($board, $style, $size, $color) {
         $style = "alpha";
     foreach ($board as $index => $line) {
         imagefttext($diagram, px2pt($size), 0, 0, ($index + 1) * $size, $colors[$color], "./fonts/$style.ttf", $line);
+    }
+    if($strip){
+        $stripped = imagecreatetruecolor($size * 8.4, $size * 8.4+$delta/2);
+        imagecopy($stripped, $diagram, 0, 0, 0.8*$size, 0.8*$size, $size * 8.4, $size * 8.4+$delta/2);
+        return $stripped;
     }
     return $diagram;
 }
