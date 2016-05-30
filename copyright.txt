@@ -1,0 +1,11 @@
+This web application is designed for creating chess diagrams by Mihail Croitor.
+First version was developed long time ago (2007?!) for site http://crestbook.com (specially for forum but is used in main site too).
+
+This file climes that you can:
+  * use this application as you want
+  * modify source code as you want
+You can`t:
+  * say something bad about author
+  * sell this application as is
+  
+Good luck in yout business!
