@@ -6,32 +6,12 @@ function switchCase(chr){
     var lowcase = "abcdefghijklmnopqrstuvwxyz";
     var upcase  = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     var index = lowcase.indexOf(chr);
-    if(index != -1)
+    if(index !== -1)
         return upcase.charAt(index);
     index = upcase.indexOf(chr);
-    if(index != -1)
+    if(index !== -1)
         return lowcase.charAt(index);
     return chr;
-}
-
-function copyIntoClipboard(text) {
-
-    var flashId = 'flashId-HKxmj5';
-
-    /* Replace this with your clipboard.swf location */
-    var clipboardSWF = '_clipboard.swf';
-
-    if(!document.getElementById(flashId)) {
-        var div = document.createElement('div');
-        div.id = flashId;
-        document.body.appendChild(div);
-    }
-    document.getElementById(flashId).innerHTML = '';
-    var content = '<embed src="' + 
-    clipboardSWF +
-    '" FlashVars="clipboard=' + encodeURIComponent(text) +
-    '" width="0" height="0" type="application/x-shockwave-flash"></embed>';
-    document.getElementById(flashId).innerHTML = content;
 }
 
 function genLink()
@@ -44,8 +24,8 @@ function genLink()
     link_ = link_ + "&style=" + style_.options[style_.selectedIndex].text;
     color_ = document.getElementById("color");
     link_ = link_ + "&color=" + color_.options[color_.selectedIndex].value;
-    strip_ = document.getElementById("strip").checked;
-    link_ = link_ + "&strip=" + strip_;
+    strip_ = document.getElementById("solid").checked;
+    link_ = link_ + "&solid=" + strip_;
     document.getElementById("dlink").setAttribute("href", link_);
 }
 
@@ -91,7 +71,7 @@ function tableToFen(pos)
         count = 0;
         for(j = 0; j < 8; ++j)
         {
-            if(pos[i][j] == 0)
+            if(pos[i][j] === 0)
             {
                 count++;
             }
@@ -206,16 +186,16 @@ function set(image)
 {
     if(move > 0)
     {
-        if(move == 1)
+        if(move === 1)
         {
             if(piece)piece.setAttribute("style", "border: 0px solid red");
             piece = image;
             move = 2;
             image.setAttribute("style", "border: 1px solid red");
         }
-        else if(move == 2)
+        else if(move === 2)
         {
-            if(piece != image)
+            if(piece !== image)
             {
                 image.setAttribute("src",piece.getAttribute("src"));
                 image.setAttribute("alt", piece.getAttribute("alt"));
@@ -266,12 +246,12 @@ function genBoard(fen)
     fen = fen.split(" ")[0];
     //alert(fen);
     var reg = /[^1-8a-h\/]+/i;
-    if(reg.test(fen) == null)
+    if(reg.test(fen) === null)
     {
         fen = "8/8/8/8/8/8/8/8";
     }
     var t = document.getElementById("board").getElementsByTagName("img");
-    for(i = 0; i < fen.length && fen[i] != ' '; i++)
+    for(i = 0; i < fen.length && fen[i] !== ' '; i++)
     {
         switch(fen[i])
         {
@@ -312,7 +292,7 @@ function genFen()
     var fields = t.getElementsByTagName("img");
     for(i = 0; i < 64; i++)
     {
-        if(i%8 == 0 && i != 0)
+        if(i%8 === 0 && i !== 0)
         {
             if(count)
                 result += count;
@@ -417,15 +397,3 @@ function movePiece(img)
     img.style.border = "2px solid red";
 }
 
-function rtf2clip(){
-    var result = "1222222223\n";
-    fen = document.getElementById("fen").value;
-    pos = fenToTable(fen);
-    for(i = 0; i < 8; ++i){
-        result += "4" + pos[i].join("") + "5\n";
-    }
-    result += "6777777778\n";
-    alert(result);
-    copyIntoClipboard(result);
-
-}

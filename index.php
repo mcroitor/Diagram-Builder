@@ -44,11 +44,7 @@ $color = array(
             #pieces img {border: 2px solid #fff; }
             #transform-position td { border: 1px solid #aaa; }
         </style>
-        <!-- script type="text/javascript" src="scripts/colorpicker.js"></script -->
         <script type="text/javascript">
-            var rtftpl = '{\rtf0\ansi {\fonttbl{\f0\fbidi\fnil;}{\f1\fbidi\fswiss\fcharset2\fprq2 #charset#;}} #data#}';
-
-            var dgtpl = '{\f1\afs36 \line #diag#\line}';
             var font = [];
 <?php
 foreach (glob("./diagram/fonts/*.ttf") as $font) {
@@ -206,14 +202,12 @@ foreach (glob("./diagram/fonts/*.ttf") as $font) {
                         <input type="text" name="fen" id="fen" value="<?= $fen ?>" onChange="genBoard(this.value)" />
                         <br /><input type="button" value="clear" onClick="clearAll();" />
                         <input type="button" value="preview" onClick="previewD();" />
-                        <br />Strip diagram: <input type="checkbox" name="strip" id="strip" onchange="genLink();" />
+                        <br />Solid diagram: <input type="checkbox" name="solid" id="solid" onchange="genLink();" />
                     </form>
                 </td>
                 <td valign="top">
-                    <h4 align="center">preview</h4><div id="preview"><img src="./diagram/?fen=88888888&size=30" /></div><br />
-                    <a href="./cd/?fen=88888888&size=30" id="dlink" target="_blank">link to position</a>&nbsp;&nbsp;&nbsp;
-                    <!-- a href="javascript:rtf2clip();" id="dlink">Copy RTF to Clipboard</a --> 
-
+                    <h4 align="center">preview</h4><div id="preview"><img src="./diagram/?fen=88888888" /></div><br />
+                    <a href="./diagram/?fen=88888888" id="dlink" target="_blank">link to position</a>
                 </td></tr>
         </table>
     </body>

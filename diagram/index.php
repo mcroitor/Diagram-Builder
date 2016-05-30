@@ -30,14 +30,12 @@ if ($fen === false) {
 }
 
 $size = filter_input(INPUT_GET, 'size', FILTER_VALIDATE_INT, array("options" => array(
-        "default" => 22,
+        "default" => 30,
         "min_range" => 10,
         "max_range" => 512
         )));
 $style = filter_input(INPUT_GET, "style", FILTER_DEFAULT, array("options" => array("default" => "alpha")));
-$solid = filter_input(INPUT_GET, "strip", FILTER_DEFAULT, array("options" => array("default" => "false")));
-//echo "strip = ".$strip;
-
+$solid = filter_input(INPUT_GET, "solid", FILTER_VALIDATE_BOOLEAN, array("options" => array("default" => false)));
 $color = filter_input(INPUT_GET, "color", FILTER_DEFAULT, array("options" => array("default" => "black")));
 
 //conversion pixel -> millimeter at 72 dpi
@@ -196,7 +194,7 @@ function fen2diag($fen, $style, $size, $color, $solid) {
     return $diagram;
 }
 
-$src = fen2diag($fen, $style, $size, $color, false);
+$src = fen2diag($fen, $style, $size, $color, $solid);
 
 header('Content-type: image/png');
 imagepng($src);
