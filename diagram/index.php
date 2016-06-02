@@ -89,7 +89,7 @@ function fen2board($fen, $solid) {
 
     // fen string verifying
     if (is_correct_epd($epd) === true) {
-        $fen = "8/8/8/8/8/8/8/8";
+        $epd = "8/8/8/8/8/8/8/8";
     }
     $len = strlen($epd);
 
