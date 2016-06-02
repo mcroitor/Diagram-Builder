@@ -19,14 +19,14 @@ $simbols["marroquin"]["/"] = "4";
 $simbols["marroquin"]["-"] = " ";
 $simbols["marroquin"]["+"] = "+";
 
-$simbols["marroquin"]["a"] = "è";
-$simbols["marroquin"]["b"] = "é";
-$simbols["marroquin"]["c"] = "ê";
-$simbols["marroquin"]["d"] = "ë";
-$simbols["marroquin"]["e"] = "ì";
-$simbols["marroquin"]["f"] = "í";
-$simbols["marroquin"]["g"] = "î";
-$simbols["marroquin"]["h"] = "ï";
+$simbols["marroquin"]["a"] = "Ð¸";
+$simbols["marroquin"]["b"] = "Ð¹";
+$simbols["marroquin"]["c"] = "Ðº";
+$simbols["marroquin"]["d"] = "Ð»";
+$simbols["marroquin"]["e"] = "Ð¼";
+$simbols["marroquin"]["f"] = "Ð½";
+$simbols["marroquin"]["g"] = "Ð¾";
+$simbols["marroquin"]["h"] = "Ð¿";
 
 $simbols["marroquin"]["K0"] = "k";
 $simbols["marroquin"]["Q0"] = "q";
@@ -58,4 +58,5 @@ $simbols["marroquin"]["p1"] = "O";
 
 $simbols["marroquin"]["X0"] = 'x';
 $simbols["marroquin"]["X1"] = 'X';
-?>
+
+$simbols["marroquin"]["delta"] = 0;

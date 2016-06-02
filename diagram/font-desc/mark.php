@@ -58,4 +58,5 @@ $simbols["mark"]["p1"] = "O";
 
 $simbols["mark"]["X0"] = 'x';
 $simbols["mark"]["X1"] = 'X';
-?>
+
+$simbols["mark"]["delta"] = 0;

@@ -19,14 +19,14 @@ $simbols["leipzig"]["/"] = "%";
 $simbols["leipzig"]["-"] = " ";
 $simbols["leipzig"]["+"] = "+";
 
-$simbols["leipzig"]["a"] = "è";
-$simbols["leipzig"]["b"] = "é";
-$simbols["leipzig"]["c"] = "ê";
-$simbols["leipzig"]["d"] = "ë";
-$simbols["leipzig"]["e"] = "ì";
-$simbols["leipzig"]["f"] = "í";
-$simbols["leipzig"]["g"] = "î";
-$simbols["leipzig"]["h"] = "ï";
+$simbols["leipzig"]["a"] = "Ð¸";
+$simbols["leipzig"]["b"] = "Ð¹";
+$simbols["leipzig"]["c"] = "Ðº";
+$simbols["leipzig"]["d"] = "Ð»";
+$simbols["leipzig"]["e"] = "Ð¼";
+$simbols["leipzig"]["f"] = "Ð½";
+$simbols["leipzig"]["g"] = "Ð¾";
+$simbols["leipzig"]["h"] = "Ð¿";
 
 $simbols["leipzig"]["K0"] = "k";
 $simbols["leipzig"]["Q0"] = "q";
@@ -58,4 +58,5 @@ $simbols["leipzig"]["p1"] = "O";
 
 $simbols["leipzig"]["X0"] = 'x';
 $simbols["leipzig"]["X1"] = 'X';
-?>
+
+$simbols["leipzig"]["delta"] = 0;

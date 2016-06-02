@@ -57,4 +57,5 @@ $simbols["aventurer"]["p1"] = "O";
 
 $simbols["aventurer"]["X0"] = 'x';
 $simbols["aventurer"]["X1"] = 'X';
-?>
+
+$simbols["aventurer"]["delta"] = 0;

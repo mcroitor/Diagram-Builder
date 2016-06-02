@@ -38,6 +38,12 @@ $style = filter_input(INPUT_GET, "style", FILTER_DEFAULT, array("options" => arr
 $solid = filter_input(INPUT_GET, "solid", FILTER_VALIDATE_BOOLEAN, array("options" => array("default" => false)));
 $color = filter_input(INPUT_GET, "color", FILTER_DEFAULT, array("options" => array("default" => "black")));
 
+if (file_exists("./font-desc/{$style}.php")) {
+    include_once("./font-desc/{$style}.php");
+} else {
+    include_once("./font-desc/alpha.php");
+}
+
 //conversion pixel -> millimeter at 72 dpi
 function px2mm($px) {
     return $px * 25.4 / 72;
@@ -75,13 +81,8 @@ function is_correct_epd($epd) {
     return $fields === 64;
 }
 
-function fen2board($fen, $style, $solid) {
-    if (file_exists("./font-desc/{$style}.php")) {
-        include_once("./font-desc/{$style}.php");
-    } else {
-        include_once("./font-desc/alpha.php");
-    }
-
+function fen2board($fen, $solid) {
+    global $simbols;
     // cut the tail if exist
     $parts = explode(" ", $fen);
     $epd = $parts[0];
@@ -130,8 +131,8 @@ function fen2board($fen, $style, $solid) {
     return $board;
 }
 
-function board2diag($board, $style, $size, $color, $solid) {
-    global $delta;
+function board2diag($board, $size, $color, $solid) {
+    global $style;
     $diagram = imagecreatetruecolor($size * 8 + 7, $size * 8 + 7);
 
     $colors = array(
@@ -162,14 +163,11 @@ function board2diag($board, $style, $size, $color, $solid) {
             $diagram, 3, 3, $size * 8 + 3, $size * 8 + 3, $colors[$color]);
     imagefilledrectangle(
             $diagram, 4, 4, $size * 8 + 2, $size * 8 + 2, $colors["white"]);
-    if (!file_exists("./fonts/$style.ttf")) {
-        $style = "alpha";
-    }
 
     if ($solid === true) {
         for ($i = 0; $i != 8; ++$i) {
-            for ($j = 0; $j != 8; ++$j) {
-                if ($i % 2 != $j % 2) {
+            for ($j = 0; $j !== 8; ++$j) {
+                if ($i % 2 !== $j % 2) {
                     imagefilledrectangle(
                             $diagram, $i * $size + 3, $j * $size + 3, ($i + 1) * $size + 3, ($j + 1) * $size + 3, $colors[$color . "shift"]);
                 } else {
@@ -182,12 +180,13 @@ function board2diag($board, $style, $size, $color, $solid) {
 
     foreach ($board as $index => $line) {
         //imagefttext($diagram, px2pt($size), 0, 0, ($index + 1) * $size, $colors[$color], "./fonts/$style.ttf", $line);
-        imagefttext($diagram, px2pt($size), 0, 3, ($index + 1) * $size + 3 + $delta[$style], $colors[$color], "./fonts/$style.ttf", $line);
+        imagefttext($diagram, px2pt($size), 0, 3, ($index + 1) * $size + 3 + $simbols["delta"], $colors[$color], "./fonts/$style.ttf", $line);
     }
     return $diagram;
 }
 
-function fen2diag($fen, $style, $size, $color, $solid) {
+function fen2diag($fen, $size, $color, $solid) {
+    global $style;
     $board = fen2board($fen, $style, $solid);
     $diagram = board2diag($board, $style, $size, $color, $solid);
 

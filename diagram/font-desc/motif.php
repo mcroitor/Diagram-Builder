@@ -70,4 +70,5 @@ $simbols["motif"]["p1"] = "O";
 
 $simbols["motif"]["X0"] = 'x';
 $simbols["motif"]["X1"] = 'X';
-?>
+
+$simbols["motif"]["delta"] = 0;

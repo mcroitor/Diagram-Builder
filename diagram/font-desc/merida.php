@@ -58,4 +58,5 @@ $simbols["merida"]["p1"] = "O";
 
 $simbols["merida"]["X0"] = 'x';
 $simbols["merida"]["X1"] = 'X';
-?>
+
+$simbols["merida"]["delta"] = 0;

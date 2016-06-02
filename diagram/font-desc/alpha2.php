@@ -1,7 +1,7 @@
 <?php
 $simbols["alpha2"] = array();
 
-$simbols["alpha2"]["8"] = "¬";
+$simbols["alpha2"]["8"] = "Â¬";
 $simbols["alpha2"]["7"] = "\"";
 $simbols["alpha2"]["6"] = chr(163);
 $simbols["alpha2"]["5"] = "$";
@@ -57,4 +57,5 @@ $simbols["alpha2"]["p1"] = chr(0xeb); //"O";
 
 $simbols["alpha2"]["X0"] = 'x';
 $simbols["alpha2"]["X1"] = 'X';
-?>
+
+$simbols["alpha2"]["delta"] = 0;

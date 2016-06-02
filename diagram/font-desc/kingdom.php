@@ -70,4 +70,5 @@ $simbols["kingdom"]["p1"] = "O";
 
 $simbols["kingdom"]["X0"] = 'x';
 $simbols["kingdom"]["X1"] = 'X';
-?>
+
+$simbols["kingdom"]["delta"] = 0;

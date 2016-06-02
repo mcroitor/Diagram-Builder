@@ -57,4 +57,5 @@ $simbols["spsl"]["p1"] = "и";
 
 $simbols["spsl"]["X0"] = 'x';
 $simbols["spsl"]["X1"] = 'X';
-?>
+
+$simbols["spsl"]["delta"] = 0;

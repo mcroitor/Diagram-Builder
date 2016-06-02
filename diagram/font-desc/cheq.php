@@ -70,4 +70,5 @@ $simbols["cheq"]["p1"] = "O";
 
 $simbols["cheq"]["X0"] = 'x';
 $simbols["cheq"]["X1"] = 'X';
-?>
+
+$simbols["cheq"]["delta"] = 0;

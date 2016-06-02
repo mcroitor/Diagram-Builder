@@ -57,4 +57,5 @@ $simbols["berlin"]["p1"] = "O";
 
 $simbols["berlin"]["X0"] = 'x';
 $simbols["berlin"]["X1"] = 'X';
-?>
+
+$simbols["berlin"]["delta"] = 0;

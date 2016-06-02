@@ -57,4 +57,5 @@ $simbols["case"]["p1"] = "O";
 
 $simbols["case"]["X0"] = 'x';
 $simbols["case"]["X1"] = 'X';
-?>
+
+$simbols["case"]["delta"] = 0;

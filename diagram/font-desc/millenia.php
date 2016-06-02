@@ -65,4 +65,5 @@ $simbols["millenia"]["p1"] = "O";
 
 $simbols["millenia"]["X0"] = 'x';
 $simbols["millenia"]["X1"] = 'X';
-?>
+
+$simbols["millenia"]["delta"] = 0;

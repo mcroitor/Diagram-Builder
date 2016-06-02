@@ -68,4 +68,5 @@ $simbols["goodcompanions"]["p1"] = chr(188);
 
 $simbols["goodcompanions"]["X0"] = chr(252);
 $simbols["goodcompanions"]["X1"] = chr(253);
-?>
+
+$simbols["goodcompanions"]["delta"] = 0;

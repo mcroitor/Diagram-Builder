@@ -70,4 +70,5 @@ $simbols["chess7"]["p1"] = "O";
 
 $simbols["chess7"]["X0"] = 'x';
 $simbols["chess7"]["X1"] = 'X';
-?>
+
+$simbols["chess7"]["delta"] = 0;

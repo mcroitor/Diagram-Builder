@@ -57,4 +57,5 @@ $simbols["isdiagram"]["p1"] = chr(36);
 
 $simbols["isdiagram"]["X0"] = 'x';
 $simbols["isdiagram"]["X1"] = 'X';
-?>
+
+$simbols["isdiagram"]["delta"] = 0;
