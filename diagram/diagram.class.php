@@ -26,8 +26,8 @@ class Diagram {
 
     function __construct($fen, $options = array()) {
         $this->board = $this->fen2board($fen);
-        $this->style = empty($options["style"]) ? "alpha" : $options["style"];
-        $this->size = empty($options["size"]) ? 30 : $options["size"];
+        $this->style = !empty($options["style"]) ? "alpha" : $options["style"];
+        $this->size = !empty($options["size"]) ? 30 : $options["size"];
     }
 
     function ascii($s) {
@@ -111,9 +111,9 @@ class Diagram {
     }
 
     function toImage(array $options = array()) {
-        $is_solid = empty($options["solid"]) ? true : $options["solid"];
-        $is_double_margin = empty($options["double"]) ? true : $options["double"];
-        $color = empty($options["color"]) ? new Color(0, 0, 0) : $options["color"];
+        $is_solid = !empty($options["solid"]) ? true : $options["solid"];
+        $is_double_margin = !empty($options["double"]) ? true : $options["double"];
+        $color = !empty($options["color"]) ? new Color(0, 0, 0) : $options["color"];
 
         $margin = ($is_double_margin == false) ? (int) ($this->size / 10) : (int) (1 + $this->size / 5);
         $image_size = $this->size * 8 + 2 * $margin; //8 fields in a row
