@@ -1,5 +1,23 @@
 <?php
 
+if (defined(DIAGRAM_PATH) == true) {
+    require_once DIAGRAM_PATH . 'definitions.php';
+} else {
+    require_once './diagram/definitions.php';
+}
+
+function frac_4($value) {
+    return (int) ($value / 4);
+}
+
+function frac_2($value) {
+    return (int) ($value / 2);
+}
+
+function frac3_4($value) {
+    return (int) (3 * $value / 4);
+}
+
 class Diagram {
 
     var $board;
@@ -7,16 +25,9 @@ class Diagram {
     var $size;
 
     function __construct($fen, $options = array()) {
-        $o = filter_var($options, FILTER_DEFAULT, array("options" => array(
-                "default" => array("style" => "alpha", "size" => 30)
-        )));
         $this->board = $this->fen2board($fen);
-        $this->style = filter_var($o["style"], FILTER_DEFAULT, array("options" => array("default" => "alpha")));
-        $this->size = filter_var($o["size"], FILTER_VALIDATE_INT, array("options" => array(
-                "default" => 30,
-                "min_range" => 10,
-                "max_range" => 512
-        )));
+        $this->style = empty($options["style"]) ? "alpha" : $options["style"];
+        $this->size = empty($options["size"]) ? 30 : $options["size"];
     }
 
     function ascii($s) {
@@ -99,9 +110,45 @@ class Diagram {
         return $brd_line;
     }
 
-    function toImage(array $options) {
-        $is_solid = filter_var($options["solid"], FILTER_VALIDATE_BOOLEAN, array("options" => array("default" => false)));
-        $is_double = filter_var($options["double"], FILTER_VALIDATE_BOOLEAN, array("options" => array("default" => false)));
+    function toImage(array $options = array()) {
+        $is_solid = empty($options["solid"]) ? true : $options["solid"];
+        $is_double_margin = empty($options["double"]) ? true : $options["double"];
+        $color = empty($options["color"]) ? new Color(0, 0, 0) : $options["color"];
+
+        $margin = ($is_double_margin == false) ? (int) ($this->size / 10) : (int) (1 + $this->size / 5);
+        $image_size = $this->size * 8 + 2 * $margin; //8 fields in a row
+
+        $image = imagecreatetruecolor($image_size, $image_size);
+        $attached_color = setColor($image, $color);
+        $attached_white_color = setColor($image, new Color(255, 255, 255));
+        $attached_color_shift = setColor($image, $color->shift());
+
+        imagefill($image, 0, 0, $attached_color);
+        if ($is_double_margin == true) {
+            imagefilledrectangle($image, $margin / 4 + 1, $margin / 4 + 1, $image_size - $margin / 4 - 1, $image_size - $margin / 4 - 1, $attached_white_color);
+            imagefilledrectangle($image, $margin / 2, $margin / 2, $image_size - $margin / 2, $image_size - $margin / 2, $attached_color);
+            imagefilledrectangle($image, 3 * $margin / 4, 3 * $margin / 4, $image_size - 3 * $margin / 4, $image_size - 3 * $margin / 4, $attached_white_color);
+        } else {
+            imagefilledrectangle($image, $margin / 2, $margin / 2, $image_size - $margin / 2, $image_size - $margin / 2, $attached_white_color);
+        }
+
+        if ($is_solid === true) {
+            for ($i = 0; $i != 8; ++$i) {
+                for ($j = 0; $j !== 8; ++$j) {
+                    imagefilledrectangle(
+                            $image, 
+                            $i * $this->size + $margin, 
+                            $j * $this->size + $margin, 
+                            ($i + 1) * $this->size + $margin, 
+                            ($j + 1) * $this->size + $margin, 
+                            ($i % 2 !== $j % 2) ? $attached_color_shift : $attached_white_color
+                    );
+                }
+            }
+        }
+        
+        // TODO # : put pieces on board!!!
+        return $image;
     }
 
 }
