@@ -175,7 +175,7 @@ foreach (glob("./diagram/fonts/*.ttf") as $font) {
                         <select name="size" onChange="genLink();" id="size">
                             <?php
                             for ($i = 10; $i < 51; ++$i)
-                                echo "<option" . ($i == 30 ? " selected='selected'" : "") . ">$i</option>";
+                                echo "<option" . ($i === 30 ? " selected='selected'" : "") . ">$i</option>";
                             ?>
                         </select>
                         <select name="style" onChange="genLink();" id="style">
@@ -183,18 +183,19 @@ foreach (glob("./diagram/fonts/*.ttf") as $font) {
                             foreach (glob("./diagram/fonts/*.ttf") as $font) {
                                 $f = str_replace("./diagram/fonts/", "", $font);
                                 $f = str_replace(".ttf", "", $f);
-                                if ($f != "cour")
+                                if ($f != "cour"){
                                     echo "<option>$f</option>";
+                                }
                             }
                             ?>
                         </select>
                         <!-- script>document.writeln(colorPickerDialog());</script -->
                         <select name="color" id="color" onChange="genLink();">
-                        <?php
-                        foreach ($color as $key => $value) {
-                            echo "<option value='{$key}' style='background-color:{$value};'>{$key}</option>";
-                        }
-                        ?>
+                            <?php
+                            foreach ($color as $key => $value) {
+                                echo "<option value='{$key}' style='background-color:{$value};'>{$key}</option>";
+                            }
+                            ?>
                         </select>
                         <br />
                     <!-- b>Text:</b><br /><input type="text" name="text" id="text" value="<?= $text ?>" /><br / -->
@@ -203,11 +204,12 @@ foreach (glob("./diagram/fonts/*.ttf") as $font) {
                         <br /><input type="button" value="clear" onClick="clearAll();" />
                         <input type="button" value="preview" onClick="previewD();" />
                         <br />Solid diagram: <input type="checkbox" name="solid" id="solid" onchange="genLink();" />
+                        Double border: <input type="checkbox" name="double" id="double" onchange="genLink();" />
                     </form>
                 </td>
                 <td valign="top">
-                    <h4 align="center">preview</h4><div id="preview"><img src="./diagram/?fen=88888888" /></div><br />
-                    <a href="./diagram/?fen=88888888" id="dlink" target="_blank">link to position</a>
+                    <h4 align="center">preview</h4><div id="preview"><img src="./diagram/?fen=8/8/8/8/8/8/8/8" /></div><br />
+                    <a href="./diagram/?fen=8/8/8/8/8/8/8/8" id="dlink" target="_blank">link to position</a>
                 </td></tr>
         </table>
     </body>

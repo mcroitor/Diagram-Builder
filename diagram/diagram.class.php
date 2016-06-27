@@ -150,7 +150,7 @@ class Diagram {
         $this->size = empty($options["size"]) ? 30 : $options["size"];
         $this->color = empty($options["color"]) ? "black" : $options["color"];
         $this->solid = empty($options["solid"]) ? false : $options["solid"];
-        $this->dbl_margin = empty($options["dbl_margin"]) ? "true" : $options["dbl_margin"];
+        $this->dbl_margin = empty($options["dbl_margin"]) ? false : $options["dbl_margin"];
 
         $this->s = 8 * $this->size;
         $this->b = (int) ($this->size / 20) + 1;
@@ -158,11 +158,12 @@ class Diagram {
         $this->m *= ($this->dbl_margin === true) ? 2 : 1;
         $this->s += 2 * $this->m;
 
+        
+        global $simbols;
         if (!file_exists("./font-desc/{$this->style}.php")) {
             $this->style = "alpha";
         }
         include_once("./font-desc/{$this->style}.php");
-        global $simbols;
         $this->simbols = $simbols[$this->style];
     }
 

@@ -26,6 +26,8 @@ function genLink()
     link_ = link_ + "&color=" + color_.options[color_.selectedIndex].value;
     strip_ = document.getElementById("solid").checked;
     link_ = link_ + "&solid=" + strip_;
+    double_ = document.getElementById("double").checked;
+    link_ = link_ + "&double=" + double_;
     document.getElementById("dlink").setAttribute("href", link_);
 }
 
