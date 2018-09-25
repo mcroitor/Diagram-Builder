@@ -1,4 +1,8 @@
 <?php
+/**
+ * 1echecs font table
+ * @author Croitor Mihail <mcroitor@gmail.com>
+ */
 $simbols["1echecs"] = array();
 
 $simbols["1echecs"]["8"] = "4";
