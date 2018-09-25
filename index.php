@@ -3,8 +3,8 @@ if (file_exists("../stat/counter.php")) {
     include( '../stat/counter.php' );
 }
 
-$fen = isset($_GET["fen"]) ? $_GET["fen"] : "8/8/8/8/8/8/8/8";
-$text = isset($_GET["text"]) ? $_GET["text"] : "";
+$fen = filter_input(INPUT_GET, "fen", FILTER_SANITIZE_STRING, ["options" => ["default" => "8/8/8/8/8/8/8/8"]]);
+$text = filter_input(INPUT_GET, "text", FILTER_SANITIZE_STRING, ["options" => ["default" => ""]]);
 
 $color = array(
     "black" => "#000",
@@ -50,8 +50,9 @@ $color = array(
 foreach (glob("./diagram/fonts/*.ttf") as $font) {
     $f = str_replace("./diagram/fonts/", "", $font);
     $f = str_replace(".ttf", "", $f);
-    if ($f != "cour")
+    if ($f != "cour") {
         echo "font[font.length] = '{$f}';\n";
+    }
 }
 ?>
         </script>
@@ -174,8 +175,9 @@ foreach (glob("./diagram/fonts/*.ttf") as $font) {
                     <form>
                         <select name="size" onChange="genLink();" id="size">
                             <?php
-                            for ($i = 10; $i < 51; ++$i)
+                            for ($i = 10; $i < 51; ++$i) {
                                 echo "<option" . ($i === 30 ? " selected='selected'" : "") . ">$i</option>";
+                            }
                             ?>
                         </select>
                         <select name="style" onChange="genLink();" id="style">
@@ -183,7 +185,7 @@ foreach (glob("./diagram/fonts/*.ttf") as $font) {
                             foreach (glob("./diagram/fonts/*.ttf") as $font) {
                                 $f = str_replace("./diagram/fonts/", "", $font);
                                 $f = str_replace(".ttf", "", $f);
-                                if ($f != "cour"){
+                                if ($f != "cour") {
                                     echo "<option>$f</option>";
                                 }
                             }
