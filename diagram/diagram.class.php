@@ -207,6 +207,7 @@ class Diagram {
             }
         }
 
+        $fix = px2pt($this->simbols["delta"] * $this->size);
         for ($i = 0; $i != 8; ++$i) {
             for ($j = 0; $j != 8; ++$j) {
                 $index = ($i % 2 === $j % 2) ? "0" : "1";
@@ -216,7 +217,14 @@ class Diagram {
                 } else {
                     $char = $this->simbols[$char . $index];
                 }
-                imagefttext($d, px2pt($this->size), 0, $j * $this->size + $this->m, ($i+1) * $this->size + $this->m, $dark_color, "./fonts/{$this->style}.ttf", $char);
+                imagefttext($d
+                        , px2pt($this->size)
+                        , 0
+                        , $j * $this->size + $this->m
+                        , ($i+1) * $this->size + $this->m + $fix
+                        , $dark_color
+                        , "./fonts/{$this->style}.ttf"
+                        , $char);
             }
         }
         return $d;

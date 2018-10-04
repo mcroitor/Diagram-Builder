@@ -58,4 +58,4 @@ $simbols["alpha2"]["p1"] = chr(0xeb); //"O";
 $simbols["alpha2"]["X0"] = 'x';
 $simbols["alpha2"]["X1"] = 'X';
 
-$simbols["alpha2"]["delta"] = 0;
+$simbols["alpha2"]["delta"] = -0.25;
