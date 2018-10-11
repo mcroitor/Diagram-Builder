@@ -65,4 +65,4 @@ $simbols["hastings"]["p1"] = chr(48);
 $simbols["hastings"]["X0"] = chr(252);
 $simbols["hastings"]["X1"] = chr(253);
 
-$simbols["hastings"]["delta"] = 0;
+$simbols["hastings"]["delta"] = -0.25;

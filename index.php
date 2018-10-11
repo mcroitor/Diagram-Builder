@@ -212,6 +212,7 @@ foreach (glob("./diagram/fonts/*.ttf") as $font) {
                 <td valign="top">
                     <h4 align="center">preview</h4><div id="preview"><img src="./diagram/?fen=8/8/8/8/8/8/8/8" /></div><br />
                     <a href="./diagram/?fen=8/8/8/8/8/8/8/8" id="dlink" target="_blank">link to position</a>
+<!--                    <a href="./batch.php" id="dlink" target="_blank">batch convert</a>-->
                 </td></tr>
         </table>
     </body>
