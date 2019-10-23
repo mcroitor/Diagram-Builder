@@ -1,5 +1,9 @@
 <?php
 
+if(defined("LIBRARY_PATH") === false){
+    define("LIBRARY_PATH", "./");
+}
+
 $colors = array(
     "black" => array(0, 0, 0),
     "red" => array(255, 0, 0),
@@ -40,14 +44,26 @@ function pt2px($pt) {
     return $pt * 4 / 3;
 }
 
+/**
+ * this class represents a chess board and realize a set of useful methods
+ */
 class Board {
 
+    /**
+     *
+     * @var string[][]
+     */
     var $board;
 
     function __construct($fen) {
         $this->board = $this->fen2board($fen);
     }
 
+    /**
+     * Converts fen to matrix (board)
+     * @param string $fen
+     * @return string[][]
+     */
     function fen2board($fen) {
         $parts = explode(" ", $fen);
         $epd = $parts[0];
@@ -65,6 +81,11 @@ class Board {
         return $brd;
     }
 
+    /**
+     * parse one token from fen
+     * @param string $line
+     * @return string[]
+     */
     private function __brd_line($line) {
         $brd_line = array();
         $count = 0;
@@ -84,6 +105,11 @@ class Board {
         return $brd_line;
     }
 
+    /**
+     * fen / epd correctness validation
+     * @param string $epd
+     * @return bool
+     */
     private function is_correct_epd($epd) {
         $len = strlen($epd);
         $fields = 0;
@@ -101,6 +127,10 @@ class Board {
         return $fields === 64;
     }
 
+    /**
+     * 
+     * @return string
+     */
     function toString() {
         $str = "";
         for ($i = 0; $i != 8; ++$i) {
@@ -109,6 +139,10 @@ class Board {
         return $str;
     }
 
+    /**
+     * lines of board
+     * @return string[]
+     */
     function lines() {
         $l = array();
         for ($i = 0; $i != 8; ++$i) {
@@ -117,6 +151,11 @@ class Board {
         return $l;
     }
 
+    /**
+     * ASCII board
+     * @param string[][] $simbols
+     * @return string
+     */
     function ascii($simbols) {
         $result = "";
         for ($i = 0; $i !== 8; ++$i) {
@@ -137,10 +176,45 @@ class Board {
 
 }
 
+/**
+ * The chess diagram generator from fen / epd string
+ */
 class Diagram {
 
+    /**
+     * Board definition
+     * @var Board 
+     */
     var $board;
-    var $style, $solid, $dbl_margin, $color, $size;
+    /**
+     * Board style, is equivalent with chess font name
+     * @var string 
+     */
+    var $style;
+    /**
+     * solid or hatched board
+     * @var bool 
+     */
+    var $solid; 
+    /**
+     * single or double margin of board
+     * @var type bool
+     */
+    var $dbl_margin; 
+    /**
+     * color of diagram
+     * @var string
+     */
+    var $color; 
+    /**
+     * field dimension
+     * @var int 
+     */
+    var $size;
+    /**
+     * chess piece representation, defined by <i>style</i>
+     * @var string[][]
+     */
     var $simbols;
     var $m, $b, $s;
 
@@ -167,10 +241,19 @@ class Diagram {
         $this->simbols = $simbols[$this->style];
     }
 
+    /**
+     * ASCII board representation
+     * @return string
+     */
     function ascii() {
         return $this->board->ascii($this->simbols);
     }
 
+    /**
+     * returns true color image
+     * @global array $colors
+     * @return resource
+     */
     function toImage() {
         global $colors;
 
@@ -223,7 +306,7 @@ class Diagram {
                         , $j * $this->size + $this->m
                         , ($i+1) * $this->size + $this->m + $fix
                         , $dark_color
-                        , "./fonts/{$this->style}.ttf"
+                        , LIBRARY_PATH . "fonts/{$this->style}.ttf"
                         , $char);
             }
         }
