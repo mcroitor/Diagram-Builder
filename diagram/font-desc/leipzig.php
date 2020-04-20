@@ -52,7 +52,7 @@ $simbols["leipzig"]["p0"] = "o";
 $simbols["leipzig"]["k1"] = "L";
 $simbols["leipzig"]["q1"] = "W";
 $simbols["leipzig"]["r1"] = "T";
-$simbols["leipzig"]["b1"] = "W";
+$simbols["leipzig"]["b1"] = "V";
 $simbols["leipzig"]["n1"] = "M";
 $simbols["leipzig"]["p1"] = "O";
 
