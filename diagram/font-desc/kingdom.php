@@ -64,7 +64,7 @@ $simbols["kingdom"]["p0"] = "o";
 $simbols["kingdom"]["k1"] = "L";
 $simbols["kingdom"]["q1"] = "W";
 $simbols["kingdom"]["r1"] = "T";
-$simbols["kingdom"]["b1"] = "W";
+$simbols["kingdom"]["b1"] = "V";
 $simbols["kingdom"]["n1"] = "M";
 $simbols["kingdom"]["p1"] = "O";
 
