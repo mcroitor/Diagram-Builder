@@ -52,7 +52,7 @@ $simbols["usual"]["p0"] = "o";
 $simbols["usual"]["k1"] = "L";
 $simbols["usual"]["q1"] = "W";
 $simbols["usual"]["r1"] = "T";
-$simbols["usual"]["b1"] = "W";
+$simbols["usual"]["b1"] = "V";
 $simbols["usual"]["n1"] = "M";
 $simbols["usual"]["p1"] = "O";
 
