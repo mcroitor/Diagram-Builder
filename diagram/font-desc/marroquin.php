@@ -52,7 +52,7 @@ $simbols["marroquin"]["p0"] = "o";
 $simbols["marroquin"]["k1"] = "L";
 $simbols["marroquin"]["q1"] = "W";
 $simbols["marroquin"]["r1"] = "T";
-$simbols["marroquin"]["b1"] = "W";
+$simbols["marroquin"]["b1"] = "V";
 $simbols["marroquin"]["n1"] = "M";
 $simbols["marroquin"]["p1"] = "O";
 
