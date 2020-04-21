@@ -64,7 +64,7 @@ $simbols["motif"]["p0"] = "o";
 $simbols["motif"]["k1"] = "L";
 $simbols["motif"]["q1"] = "W";
 $simbols["motif"]["r1"] = "T";
-$simbols["motif"]["b1"] = "W";
+$simbols["motif"]["b1"] = "V";
 $simbols["motif"]["n1"] = "M";
 $simbols["motif"]["p1"] = "O";
 
