@@ -19,14 +19,14 @@ $simbols["maya"]["/"] = "%";
 $simbols["maya"]["-"] = " ";
 $simbols["maya"]["+"] = "+";
 
-$simbols["maya"]["a"] = "è";
-$simbols["maya"]["b"] = "é";
-$simbols["maya"]["c"] = "ê";
-$simbols["maya"]["d"] = "ë";
-$simbols["maya"]["e"] = "ì";
-$simbols["maya"]["f"] = "í";
-$simbols["maya"]["g"] = "î";
-$simbols["maya"]["h"] = "ï";
+$simbols["maya"]["a"] = "Ã¨";
+$simbols["maya"]["b"] = "Ã©";
+$simbols["maya"]["c"] = "Ãª";
+$simbols["maya"]["d"] = "Ã«";
+$simbols["maya"]["e"] = "Ã¬";
+$simbols["maya"]["f"] = "Ã­";
+$simbols["maya"]["g"] = "Ã®";
+$simbols["maya"]["h"] = "Ã¯";
 
 $simbols["maya"]["K0"] = "k";
 $simbols["maya"]["Q0"] = "q";
@@ -52,7 +52,7 @@ $simbols["maya"]["p0"] = "o";
 $simbols["maya"]["k1"] = "L";
 $simbols["maya"]["q1"] = "W";
 $simbols["maya"]["r1"] = "T";
-$simbols["maya"]["b1"] = "W";
+$simbols["maya"]["b1"] = "V";
 $simbols["maya"]["n1"] = "M";
 $simbols["maya"]["p1"] = "O";
 
