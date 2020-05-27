@@ -1,7 +1,7 @@
 <?php
 
 if(defined("LIBRARY_PATH") === false){
-    define("LIBRARY_PATH", "./");
+    define("LIBRARY_PATH", __DIR__ . "/");
 }
 
 $colors = array(
@@ -90,15 +90,15 @@ class Board {
         $brd_line = array();
         $count = 0;
         for ($i = 0; $i < strlen($line); ++$i) {
-            if (strpos("12345678", $line{$i}) !== false) {
-                $aux = (int) $line{$i};
+            if (strpos("12345678", $line[$i]) !== false) {
+                $aux = (int) $line[$i];
                 while ($aux > 0) {
                     $brd_line[$count] = " ";
                     ++$count;
                     --$aux;
                 }
             } else {
-                $brd_line[$count] = $line{$i};
+                $brd_line[$count] = $line[$i];
                 ++$count;
             }
         }
@@ -114,11 +114,11 @@ class Board {
         $len = strlen($epd);
         $fields = 0;
         for ($i = 0; $i < $len; $i++) {
-            if (strpos("12345678", $epd{$i}) === true) {
-                $fields +=$epd{$i};
-            } elseif (strpos("kqrbnpKQRBNPX", $epd{$i}) === true) {
+            if (strpos("12345678", $epd[$i]) === true) {
+                $fields +=$epd[$i];
+            } elseif (strpos("kqrbnpKQRBNPX", $epd[$i]) === true) {
                 $fields++;
-            } elseif ($epd{$i} === '/') {
+            } elseif ($epd[$i] === '/') {
                 
             } else {
                 $fields +=100;

@@ -1,6 +1,6 @@
 <?php
 
-$courier_font =  realpath('./cour.ttf');
+$courier_font =  realpath('../cour.ttf');
 
 function px2pt($px) {
     return $px * 3 / 4;
@@ -11,8 +11,8 @@ $h = 24;
 $nr_cols = 16;
 $nr_rows = 16;
 
-foreach (glob("./fonts/*.ttf") as $font) {
-    $font_name = str_replace("./fonts/", "", $font);
+foreach (glob("../fonts/*.ttf") as $font) {
+    $font_name = str_replace("../fonts/", "", $font);
     $font_name = str_replace(".ttf", "", $font_name);
     // create image (5x16) x 16
     $image = imagecreatetruecolor(4 * $w * $nr_cols, $h * $nr_rows);
@@ -50,11 +50,11 @@ foreach (glob("./fonts/*.ttf") as $font) {
                 , 4 * intval($i % $nr_cols) * $w + 3 * $w
                 , intval($i / $nr_cols) * $h
                 , $dark_color
-                , realpath("./fonts/{$font_name}.ttf")
+                , realpath("../fonts/{$font_name}.ttf")
                 , chr($i));
     }
 
-    $file_location = "./helper-result/{$font_name}.png";
+    $file_location = "./{$font_name}.png";
     imagepng($image, $file_location, 0, NULL);
     echo "template created for font <a href='{$file_location}'><b>{$font_name}</b></a><br />";
 }

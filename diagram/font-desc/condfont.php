@@ -15,7 +15,7 @@ $simbols["condfont"]["top"] = "A\"\"\"\"\"\"\"\"S";
 $simbols["condfont"]["bottom"] = "D((((((((F";
 $simbols["condfont"]["/"] = "$";
 
-$simbols["condfont"]["-"] = "-";
+$simbols["condfont"]["-"] = " ";
 $simbols["condfont"]["+"] = "+";
 
 $simbols["condfont"]["a"] = "a";

@@ -242,6 +242,12 @@ function clearAll()
     document.getElementById("fen").value="8/8/8/8/8/8/8/8";
 }
 
+function init()
+{
+    document.getElementById("fen").value="rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR";
+    genBoard("rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR");
+}
+
 function genBoard(fen)
 {
     var s = 0;

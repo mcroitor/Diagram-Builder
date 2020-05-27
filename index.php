@@ -204,6 +204,7 @@ foreach (glob("./diagram/fonts/*.ttf") as $font) {
                         <b>FEN:</b><br />
                         <input type="text" name="fen" id="fen" value="<?= $fen ?>" onChange="genBoard(this.value)" />
                         <br /><input type="button" value="clear" onClick="clearAll();" />
+                        <input type="button" value="init" onClick="init();" />
                         <input type="button" value="preview" onClick="previewD();" />
                         <br />Solid diagram: <input type="checkbox" name="solid" id="solid" onchange="genLink();" />
                         Double border: <input type="checkbox" name="double" id="double" onchange="genLink();" />
