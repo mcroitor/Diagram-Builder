@@ -305,7 +305,7 @@ class Diagram {
         $fix = px2pt($this->simbols["delta"] * $this->size);
         for ($i = 0; $i != 8; ++$i) {
             for ($j = 0; $j != 8; ++$j) {
-                $index = ($i % 2 === $j % 2) ? "0" : "1";
+                $index = ($i % 2 === $j % 2 || $this->solid == true) ? "0" : "1";
                 $char = $this->board->board[$i][$j];
                 if ($char === " ") {
                     $char = ($index === "0") ? $this->simbols["-"] : $this->simbols["+"];
