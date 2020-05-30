@@ -1,9 +1,17 @@
 Diagram Builder is dedicated to construct chess diagrams with different 
 properties, such as size, style and color.
 
-Just unpack and run index.php!
+Just unpack on your server and run index.php! 
+__Attnetion:__ sure, you need to have a PHP interpreter installed :)
+
+* Recommended versions PHP: 7.*
+* GD2 extentions enabled
 
 Example of diagram builder is presented at http://moodle.usm.md/builder/
+
+Diagram Builder is used on:
+ * ChessStar -- https://www.chessstar.com/others/croitor/
+ * ChessblogYG -- http://9148.od.ua/nabor-diagramm/
 
 Next chess fonts has not implemented yet from different motives:
  * alfochess

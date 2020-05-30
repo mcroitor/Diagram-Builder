@@ -14,7 +14,10 @@ $color = array(
     "gray" => "#888",
     "darkred" => "#800",
     "darkgreen" => "#080",
-    "darkblue" => "#008"
+    "darkblue" => "#008",
+    "olive" => "#808000",
+    "armygreen" => "#4b5320",
+    "indigo" => "#4b0082"
 );
 ?>
 
