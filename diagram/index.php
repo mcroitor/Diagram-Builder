@@ -7,10 +7,10 @@ if ($fen === false) {
 
 
 $options = array(
-    "size" => filter_input(INPUT_GET, 'size', FILTER_VALIDATE_INT),
-    "style" => filter_input(INPUT_GET, "style", FILTER_SANITIZE_STRING),
+    "size" => strtolower(filter_input(INPUT_GET, 'size', FILTER_VALIDATE_INT)),
+    "style" => strtolower(filter_input(INPUT_GET, "style", FILTER_SANITIZE_STRING)),
     "solid" => filter_input(INPUT_GET, "solid", FILTER_VALIDATE_BOOLEAN),
-    "color" => filter_input(INPUT_GET, "color", FILTER_SANITIZE_STRING),
+    "color" => strtolower(filter_input(INPUT_GET, "color", FILTER_SANITIZE_STRING)),
     "dbl_margin" => filter_input(INPUT_GET, "double", FILTER_VALIDATE_BOOLEAN)
 );
 

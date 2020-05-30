@@ -1,28 +1,34 @@
 <?php
 
-if(defined("LIBRARY_PATH") === false){
+if (defined("LIBRARY_PATH") === false) {
     define("LIBRARY_PATH", __DIR__ . "/");
 }
 
-$colors = array(
-    "black" => array(0, 0, 0),
-    "red" => array(255, 0, 0),
-    "green" => array(0, 255, 0),
-    "blue" => array(0, 0, 255),
-    "gray" => array(127, 127, 127),
-    "darkred" => array(127, 0, 0),
-    "darkgreen" => array(0, 127, 0),
-    "darkblue" => array(0, 0, 127),
-    "white" => array(255, 255, 255),
-    "blackshift" => array(127, 127, 127),
-    "redshift" => array(255, 127, 127),
-    "greenshift" => array(127, 255, 127),
-    "blueshift" => array(127, 127, 255),
-    "grayshift" => array(196, 196, 196),
-    "darkredshift" => array(196, 127, 127),
-    "darkgreenshift" => array(127, 196, 127),
-    "darkblueshift" => array(127, 127, 196)
-);
+$colors = [
+    "black" => [0, 0, 0],
+    "red" => [255, 0, 0],
+    "green" => [0, 255, 0],
+    "blue" => [0, 0, 255],
+    "gray" => [127, 127, 127],
+    "darkred" => [127, 0, 0],
+    "darkgreen" => [0, 127, 0],
+    "darkblue" => [0, 0, 127],
+    "white" => [255, 255, 255],
+    "blackshift" => [159, 159, 159],
+    "redshift" => [255, 159, 159],
+    "greenshift" => [159, 255, 159],
+    "blueshift" => [159, 159, 255],
+    "grayshift" => [196, 196, 196],
+    "darkredshift" => [196, 159, 159],
+    "darkgreenshift" => [159, 196, 159],
+    "darkblueshift" => [159, 159, 196],
+    "olive" => [127, 127, 0],
+    "oliveshift" => [196, 196, 159],
+    "armygreen" => [75, 83, 32],
+    "armygreenshift" => [75 + 127, 83 + 127, 32 + 127],
+    "indigo" => [75, 0, 130],
+    "indigoshift" => [75 + 127, 0 + 127, 255]
+];
 
 //conversion pixel -> millimeter at 72 dpi
 function px2mm($px) {
@@ -72,7 +78,7 @@ class Board {
         if ($this->is_correct_epd($epd) === true) {
             $epd = "8/8/8/8/8/8/8/8";
         }
-        $brd = array();
+        $brd = [];
 
         $lines = explode("/", $epd);
         for ($i = 0; $i !== 8; ++$i) {
@@ -87,7 +93,7 @@ class Board {
      * @return string[]
      */
     private function __brd_line($line) {
-        $brd_line = array();
+        $brd_line = [];
         $count = 0;
         for ($i = 0; $i < strlen($line); ++$i) {
             if (strpos("12345678", $line[$i]) !== false) {
@@ -115,13 +121,13 @@ class Board {
         $fields = 0;
         for ($i = 0; $i < $len; $i++) {
             if (strpos("12345678", $epd[$i]) === true) {
-                $fields +=$epd[$i];
+                $fields += $epd[$i];
             } elseif (strpos("kqrbnpKQRBNPX", $epd[$i]) === true) {
                 $fields++;
             } elseif ($epd[$i] === '/') {
                 
             } else {
-                $fields +=100;
+                $fields += 100;
             }
         }
         return $fields === 64;
@@ -144,7 +150,7 @@ class Board {
      * @return string[]
      */
     function lines() {
-        $l = array();
+        $l = [];
         for ($i = 0; $i != 8; ++$i) {
             $l[$i] = implode($this->board[$i]);
         }
@@ -159,7 +165,7 @@ class Board {
     function ascii($simbols) {
         $result = "";
         for ($i = 0; $i !== 8; ++$i) {
-            $board_line = array();
+            $board_line = [];
             for ($j = 0; $j !== 8; ++$j) {
                 if ($this->board[$i][$j] === " ") {
                     $index = ($i % 2 === $j % 2) ? "+" : "-";
@@ -186,31 +192,37 @@ class Diagram {
      * @var Board 
      */
     var $board;
+
     /**
      * Board style, is equivalent with chess font name
      * @var string 
      */
     var $style;
+
     /**
      * solid or hatched board
      * @var bool 
      */
-    var $solid; 
+    var $solid;
+
     /**
      * single or double margin of board
      * @var type bool
      */
-    var $dbl_margin; 
+    var $dbl_margin;
+
     /**
      * color of diagram
      * @var string
      */
-    var $color; 
+    var $color;
+
     /**
      * field dimension
      * @var int 
      */
     var $size;
+
     /**
      * chess piece representation, defined by <i>style</i>
      * @var string[][]
@@ -218,7 +230,7 @@ class Diagram {
     var $simbols;
     var $m, $b, $s;
 
-    function __construct($fen, $options = array()) {
+    function __construct($fen, $options = []) {
         $this->board = new Board($fen);
         $this->style = empty($options["style"]) ? "alpha" : $options["style"];
         $this->size = empty($options["size"]) ? 30 : $options["size"];
@@ -227,12 +239,12 @@ class Diagram {
         $this->dbl_margin = empty($options["dbl_margin"]) ? false : $options["dbl_margin"];
 
         $this->s = 8 * $this->size;
-        $this->b = (int) ($this->size / 20) + 1;
+        $this->b = (int) ($this->size / 40) + 1;
         $this->m = $this->b + 1;
-        $this->m *= ($this->dbl_margin === true) ? 2 : 1;
+        $this->m *= ($this->dbl_margin === true) ? 3 : 1;
         $this->s += 2 * $this->m;
 
-        
+
         global $simbols;
         if (!file_exists("./font-desc/{$this->style}.php")) {
             $this->style = "alpha";
@@ -304,7 +316,7 @@ class Diagram {
                         , px2pt($this->size)
                         , 0
                         , $j * $this->size + $this->m
-                        , ($i+1) * $this->size + $this->m + $fix
+                        , ($i + 1) * $this->size + $this->m + $fix
                         , $dark_color
                         , LIBRARY_PATH . "fonts/{$this->style}.ttf"
                         , $char);
