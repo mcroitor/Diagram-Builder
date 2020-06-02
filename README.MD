@@ -24,6 +24,15 @@ Next chess fonts has not implemented yet from different motives:
  * piratdia
 
 You can check if your font can be used for diagram building. Put your font in
-**diagram/fonts** directory and execute **diagram/helper.php**. In directory 
+**diagram/fonts** directory and execute **diagram/helper-result/helper.php**. In directory 
 **diagram/helper-result** will be created images (character map) for each font 
 from **diagram/fonts** directory.
+
+## known bugs / features
+
+__This is not a bug, this is a feature!__
+
+ * When you use _solid_ option, pieces has the same inner color as dark fields.
+This is not a bug, this is a constructive problem related with TTF fonts. Diagram
+creation is based at font, font is just a lot of shapes, basically drowed by black.
+ * _Good Companions_ -- nice font, but need to be offset fixed.
