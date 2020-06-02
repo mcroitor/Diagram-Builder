@@ -44,14 +44,14 @@ $simbols["aventurer"]["P1"] = "P";
 $simbols["aventurer"]["k0"] = "l";
 $simbols["aventurer"]["q0"] = "w";
 $simbols["aventurer"]["r0"] = "t";
-$simbols["aventurer"]["b0"] = "n";
+$simbols["aventurer"]["b0"] = "v";
 $simbols["aventurer"]["n0"] = "m";
 $simbols["aventurer"]["p0"] = "o";
 
 $simbols["aventurer"]["k1"] = "L";
 $simbols["aventurer"]["q1"] = "W";
 $simbols["aventurer"]["r1"] = "T";
-$simbols["aventurer"]["b1"] = "N";
+$simbols["aventurer"]["b1"] = "V";
 $simbols["aventurer"]["n1"] = "M";
 $simbols["aventurer"]["p1"] = "O";
 
