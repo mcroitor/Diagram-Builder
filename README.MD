@@ -7,7 +7,7 @@ __Attnetion:__ sure, you need to have a PHP interpreter installed :)
 * Recommended versions PHP: 7.*
 * GD2 extentions enabled
 
-Example of diagram builder is presented at http://moodle.usm.md/builder/
+Example of diagram builder is presented at http://endgame.md/builder/
 
 Diagram Builder is used on:
  * ChessStar -- https://www.chessstar.com/others/croitor/
