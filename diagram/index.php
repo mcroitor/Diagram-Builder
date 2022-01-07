@@ -8,9 +8,9 @@ if ($fen === false) {
 
 $options = array(
     "size" => strtolower(filter_input(INPUT_GET, 'size', FILTER_VALIDATE_INT)),
-    "style" => strtolower(filter_input(INPUT_GET, "style", FILTER_SANITIZE_STRING)),
+    "style" => strtolower(filter_input(INPUT_GET, "style", FILTER_SANITIZE_FULL_SPECIAL_CHARS) ?? "alpha"),
     "solid" => filter_input(INPUT_GET, "solid", FILTER_VALIDATE_BOOLEAN),
-    "color" => strtolower(filter_input(INPUT_GET, "color", FILTER_SANITIZE_STRING)),
+    "color" => strtolower(filter_input(INPUT_GET, "color", FILTER_SANITIZE_FULL_SPECIAL_CHARS) ?? "black"),
     "dbl_margin" => filter_input(INPUT_GET, "double", FILTER_VALIDATE_BOOLEAN)
 );
 
