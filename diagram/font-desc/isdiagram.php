@@ -1,61 +1,61 @@
 <?php
-$simbols["isdiagram"] = array();
+$symbols["isdiagram"] = array();
 
-$simbols["isdiagram"]["8"] = "I";
-$simbols["isdiagram"]["7"] = "I";
-$simbols["isdiagram"]["6"] = "I";
-$simbols["isdiagram"]["5"] = "I";
-$simbols["isdiagram"]["4"] = "I";
-$simbols["isdiagram"]["3"] = "I";
-$simbols["isdiagram"]["2"] = "I";
-$simbols["isdiagram"]["1"] = "I";
+$symbols["isdiagram"]["8"] = "I";
+$symbols["isdiagram"]["7"] = "I";
+$symbols["isdiagram"]["6"] = "I";
+$symbols["isdiagram"]["5"] = "I";
+$symbols["isdiagram"]["4"] = "I";
+$symbols["isdiagram"]["3"] = "I";
+$symbols["isdiagram"]["2"] = "I";
+$symbols["isdiagram"]["1"] = "I";
 
-$simbols["isdiagram"]["|"] = "J";
-$simbols["isdiagram"]["top"] = "MKKKKKKKKN";
-$simbols["isdiagram"]["bottom"] = "PLLLLLLLLO";
-$simbols["isdiagram"]["/"] = "I";
+$symbols["isdiagram"]["|"] = "J";
+$symbols["isdiagram"]["top"] = "MKKKKKKKKN";
+$symbols["isdiagram"]["bottom"] = "PLLLLLLLLO";
+$symbols["isdiagram"]["/"] = "I";
 
-$simbols["isdiagram"]["-"] = "?";
-$simbols["isdiagram"]["+"] = "@";
+$symbols["isdiagram"]["-"] = "?";
+$symbols["isdiagram"]["+"] = "@";
 
-$simbols["isdiagram"]["a"] = "a";
-$simbols["isdiagram"]["b"] = "b";
-$simbols["isdiagram"]["c"] = "c";
-$simbols["isdiagram"]["d"] = "d";
-$simbols["isdiagram"]["e"] = "e";
-$simbols["isdiagram"]["f"] = "f";
-$simbols["isdiagram"]["g"] = "g";
-$simbols["isdiagram"]["h"] = "h";
+$symbols["isdiagram"]["a"] = "a";
+$symbols["isdiagram"]["b"] = "b";
+$symbols["isdiagram"]["c"] = "c";
+$symbols["isdiagram"]["d"] = "d";
+$symbols["isdiagram"]["e"] = "e";
+$symbols["isdiagram"]["f"] = "f";
+$symbols["isdiagram"]["g"] = "g";
+$symbols["isdiagram"]["h"] = "h";
 
-$simbols["isdiagram"]["K0"] = chr(53);
-$simbols["isdiagram"]["Q0"] = chr(49);
-$simbols["isdiagram"]["R0"] = chr(45);
-$simbols["isdiagram"]["B0"] = chr(41);
-$simbols["isdiagram"]["N0"] = chr(37);
-$simbols["isdiagram"]["P0"] = chr(33);
+$symbols["isdiagram"]["K0"] = chr(53);
+$symbols["isdiagram"]["Q0"] = chr(49);
+$symbols["isdiagram"]["R0"] = chr(45);
+$symbols["isdiagram"]["B0"] = chr(41);
+$symbols["isdiagram"]["N0"] = chr(37);
+$symbols["isdiagram"]["P0"] = chr(33);
 
-$simbols["isdiagram"]["K1"] = chr(54);
-$simbols["isdiagram"]["Q1"] = chr(50);
-$simbols["isdiagram"]["R1"] = chr(46);
-$simbols["isdiagram"]["B1"] = chr(42);
-$simbols["isdiagram"]["N1"] = chr(38);
-$simbols["isdiagram"]["P1"] = chr(34);
+$symbols["isdiagram"]["K1"] = chr(54);
+$symbols["isdiagram"]["Q1"] = chr(50);
+$symbols["isdiagram"]["R1"] = chr(46);
+$symbols["isdiagram"]["B1"] = chr(42);
+$symbols["isdiagram"]["N1"] = chr(38);
+$symbols["isdiagram"]["P1"] = chr(34);
 
-$simbols["isdiagram"]["k0"] = chr(55);
-$simbols["isdiagram"]["q0"] = chr(51);
-$simbols["isdiagram"]["r0"] = chr(47);
-$simbols["isdiagram"]["b0"] = chr(43);
-$simbols["isdiagram"]["n0"] = chr(39);
-$simbols["isdiagram"]["p0"] = chr(35);
+$symbols["isdiagram"]["k0"] = chr(55);
+$symbols["isdiagram"]["q0"] = chr(51);
+$symbols["isdiagram"]["r0"] = chr(47);
+$symbols["isdiagram"]["b0"] = chr(43);
+$symbols["isdiagram"]["n0"] = chr(39);
+$symbols["isdiagram"]["p0"] = chr(35);
 
-$simbols["isdiagram"]["k1"] = chr(56);
-$simbols["isdiagram"]["q1"] = chr(52);
-$simbols["isdiagram"]["r1"] = chr(48);
-$simbols["isdiagram"]["b1"] = chr(44);
-$simbols["isdiagram"]["n1"] = chr(40);
-$simbols["isdiagram"]["p1"] = chr(36);
+$symbols["isdiagram"]["k1"] = chr(56);
+$symbols["isdiagram"]["q1"] = chr(52);
+$symbols["isdiagram"]["r1"] = chr(48);
+$symbols["isdiagram"]["b1"] = chr(44);
+$symbols["isdiagram"]["n1"] = chr(40);
+$symbols["isdiagram"]["p1"] = chr(36);
 
-$simbols["isdiagram"]["X0"] = 'x';
-$simbols["isdiagram"]["X1"] = 'X';
+$symbols["isdiagram"]["X0"] = 'x';
+$symbols["isdiagram"]["X1"] = 'X';
 
-$simbols["isdiagram"]["delta"] = 0;
+$symbols["isdiagram"]["delta"] = 0;

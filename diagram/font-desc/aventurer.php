@@ -1,61 +1,61 @@
 <?php
-$simbols["aventurer"] = array();
+$symbols["aventurer"] = array();
 
-$simbols["aventurer"]["8"] = "$";
-$simbols["aventurer"]["7"] = "$";
-$simbols["aventurer"]["6"] = "$";
-$simbols["aventurer"]["5"] = "$";
-$simbols["aventurer"]["4"] = "$";
-$simbols["aventurer"]["3"] = "$";
-$simbols["aventurer"]["2"] = "$";
-$simbols["aventurer"]["1"] = "$";
+$symbols["aventurer"]["8"] = "$";
+$symbols["aventurer"]["7"] = "$";
+$symbols["aventurer"]["6"] = "$";
+$symbols["aventurer"]["5"] = "$";
+$symbols["aventurer"]["4"] = "$";
+$symbols["aventurer"]["3"] = "$";
+$symbols["aventurer"]["2"] = "$";
+$symbols["aventurer"]["1"] = "$";
 
-$simbols["aventurer"]["|"] = "%";
-$simbols["aventurer"]["top"] = "A\"\"\"\"\"\"\"\"S";
-$simbols["aventurer"]["bottom"] = "D((((((((F";
-$simbols["aventurer"]["/"] = "$";
+$symbols["aventurer"]["|"] = "%";
+$symbols["aventurer"]["top"] = "A\"\"\"\"\"\"\"\"S";
+$symbols["aventurer"]["bottom"] = "D((((((((F";
+$symbols["aventurer"]["/"] = "$";
 
-$simbols["aventurer"]["-"] = "*";
-$simbols["aventurer"]["+"] = "+";
+$symbols["aventurer"]["-"] = "*";
+$symbols["aventurer"]["+"] = "+";
 
-$simbols["aventurer"]["a"] = "a";
-$simbols["aventurer"]["b"] = "b";
-$simbols["aventurer"]["c"] = "c";
-$simbols["aventurer"]["d"] = "d";
-$simbols["aventurer"]["e"] = "e";
-$simbols["aventurer"]["f"] = "f";
-$simbols["aventurer"]["g"] = "g";
-$simbols["aventurer"]["h"] = "h";
+$symbols["aventurer"]["a"] = "a";
+$symbols["aventurer"]["b"] = "b";
+$symbols["aventurer"]["c"] = "c";
+$symbols["aventurer"]["d"] = "d";
+$symbols["aventurer"]["e"] = "e";
+$symbols["aventurer"]["f"] = "f";
+$symbols["aventurer"]["g"] = "g";
+$symbols["aventurer"]["h"] = "h";
 
-$simbols["aventurer"]["K0"] = "k";
-$simbols["aventurer"]["Q0"] = "q";
-$simbols["aventurer"]["R0"] = "r";
-$simbols["aventurer"]["B0"] = "b";
-$simbols["aventurer"]["N0"] = "n";
-$simbols["aventurer"]["P0"] = "p";
+$symbols["aventurer"]["K0"] = "k";
+$symbols["aventurer"]["Q0"] = "q";
+$symbols["aventurer"]["R0"] = "r";
+$symbols["aventurer"]["B0"] = "b";
+$symbols["aventurer"]["N0"] = "n";
+$symbols["aventurer"]["P0"] = "p";
 
-$simbols["aventurer"]["K1"] = "K";
-$simbols["aventurer"]["Q1"] = "Q";
-$simbols["aventurer"]["R1"] = "R";
-$simbols["aventurer"]["B1"] = "B";
-$simbols["aventurer"]["N1"] = "N";
-$simbols["aventurer"]["P1"] = "P";
+$symbols["aventurer"]["K1"] = "K";
+$symbols["aventurer"]["Q1"] = "Q";
+$symbols["aventurer"]["R1"] = "R";
+$symbols["aventurer"]["B1"] = "B";
+$symbols["aventurer"]["N1"] = "N";
+$symbols["aventurer"]["P1"] = "P";
 
-$simbols["aventurer"]["k0"] = "l";
-$simbols["aventurer"]["q0"] = "w";
-$simbols["aventurer"]["r0"] = "t";
-$simbols["aventurer"]["b0"] = "v";
-$simbols["aventurer"]["n0"] = "m";
-$simbols["aventurer"]["p0"] = "o";
+$symbols["aventurer"]["k0"] = "l";
+$symbols["aventurer"]["q0"] = "w";
+$symbols["aventurer"]["r0"] = "t";
+$symbols["aventurer"]["b0"] = "v";
+$symbols["aventurer"]["n0"] = "m";
+$symbols["aventurer"]["p0"] = "o";
 
-$simbols["aventurer"]["k1"] = "L";
-$simbols["aventurer"]["q1"] = "W";
-$simbols["aventurer"]["r1"] = "T";
-$simbols["aventurer"]["b1"] = "V";
-$simbols["aventurer"]["n1"] = "M";
-$simbols["aventurer"]["p1"] = "O";
+$symbols["aventurer"]["k1"] = "L";
+$symbols["aventurer"]["q1"] = "W";
+$symbols["aventurer"]["r1"] = "T";
+$symbols["aventurer"]["b1"] = "V";
+$symbols["aventurer"]["n1"] = "M";
+$symbols["aventurer"]["p1"] = "O";
 
-$simbols["aventurer"]["X0"] = 'x';
-$simbols["aventurer"]["X1"] = 'X';
+$symbols["aventurer"]["X0"] = 'x';
+$symbols["aventurer"]["X1"] = 'X';
 
-$simbols["aventurer"]["delta"] = 0;
+$symbols["aventurer"]["delta"] = 0;

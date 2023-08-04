@@ -1,5 +1,5 @@
 <?php
-$simbols["kingdom"] = array();
+$symbols["kingdom"] = array();
 
 /*
 !""""""""#
@@ -14,61 +14,61 @@ $simbols["kingdom"] = array();
 /ÈÉÊËÌÍÎÏ)
 */
 
-$simbols["kingdom"]["8"] = "$";
-$simbols["kingdom"]["7"] = "$";
-$simbols["kingdom"]["6"] = "$";
-$simbols["kingdom"]["5"] = "$";
-$simbols["kingdom"]["4"] = "$";
-$simbols["kingdom"]["3"] = "$";
-$simbols["kingdom"]["2"] = "$";
-$simbols["kingdom"]["1"] = "$";
+$symbols["kingdom"]["8"] = "$";
+$symbols["kingdom"]["7"] = "$";
+$symbols["kingdom"]["6"] = "$";
+$symbols["kingdom"]["5"] = "$";
+$symbols["kingdom"]["4"] = "$";
+$symbols["kingdom"]["3"] = "$";
+$symbols["kingdom"]["2"] = "$";
+$symbols["kingdom"]["1"] = "$";
 
-$simbols["kingdom"]["|"] = "%";
-$simbols["kingdom"]["top"] = "A\"\"\"\"\"\"\"\"S"; // "1222222223";
-$simbols["kingdom"]["bottom"] = "D((((((((F";
-$simbols["kingdom"]["/"] = "%";
+$symbols["kingdom"]["|"] = "%";
+$symbols["kingdom"]["top"] = "A\"\"\"\"\"\"\"\"S"; // "1222222223";
+$symbols["kingdom"]["bottom"] = "D((((((((F";
+$symbols["kingdom"]["/"] = "%";
 
-$simbols["kingdom"]["-"] = " ";
-$simbols["kingdom"]["+"] = "+";
+$symbols["kingdom"]["-"] = " ";
+$symbols["kingdom"]["+"] = "+";
 
-$simbols["kingdom"]["a"] = "и";
-$simbols["kingdom"]["b"] = "й";
-$simbols["kingdom"]["c"] = "к";
-$simbols["kingdom"]["d"] = "л";
-$simbols["kingdom"]["e"] = "м";
-$simbols["kingdom"]["f"] = "н";
-$simbols["kingdom"]["g"] = "о";
-$simbols["kingdom"]["h"] = "п";
+$symbols["kingdom"]["a"] = "и";
+$symbols["kingdom"]["b"] = "й";
+$symbols["kingdom"]["c"] = "к";
+$symbols["kingdom"]["d"] = "л";
+$symbols["kingdom"]["e"] = "м";
+$symbols["kingdom"]["f"] = "н";
+$symbols["kingdom"]["g"] = "о";
+$symbols["kingdom"]["h"] = "п";
 
-$simbols["kingdom"]["K0"] = "k";
-$simbols["kingdom"]["Q0"] = "q";
-$simbols["kingdom"]["R0"] = "r";
-$simbols["kingdom"]["B0"] = "b";
-$simbols["kingdom"]["N0"] = "n";
-$simbols["kingdom"]["P0"] = "p";
+$symbols["kingdom"]["K0"] = "k";
+$symbols["kingdom"]["Q0"] = "q";
+$symbols["kingdom"]["R0"] = "r";
+$symbols["kingdom"]["B0"] = "b";
+$symbols["kingdom"]["N0"] = "n";
+$symbols["kingdom"]["P0"] = "p";
 
-$simbols["kingdom"]["K1"] = "K";
-$simbols["kingdom"]["Q1"] = "Q";
-$simbols["kingdom"]["R1"] = "R";
-$simbols["kingdom"]["B1"] = "B";
-$simbols["kingdom"]["N1"] = "N";
-$simbols["kingdom"]["P1"] = "P";
+$symbols["kingdom"]["K1"] = "K";
+$symbols["kingdom"]["Q1"] = "Q";
+$symbols["kingdom"]["R1"] = "R";
+$symbols["kingdom"]["B1"] = "B";
+$symbols["kingdom"]["N1"] = "N";
+$symbols["kingdom"]["P1"] = "P";
 
-$simbols["kingdom"]["k0"] = "l";
-$simbols["kingdom"]["q0"] = "w";
-$simbols["kingdom"]["r0"] = "t";
-$simbols["kingdom"]["b0"] = "v";
-$simbols["kingdom"]["n0"] = "m";
-$simbols["kingdom"]["p0"] = "o";
+$symbols["kingdom"]["k0"] = "l";
+$symbols["kingdom"]["q0"] = "w";
+$symbols["kingdom"]["r0"] = "t";
+$symbols["kingdom"]["b0"] = "v";
+$symbols["kingdom"]["n0"] = "m";
+$symbols["kingdom"]["p0"] = "o";
 
-$simbols["kingdom"]["k1"] = "L";
-$simbols["kingdom"]["q1"] = "W";
-$simbols["kingdom"]["r1"] = "T";
-$simbols["kingdom"]["b1"] = "V";
-$simbols["kingdom"]["n1"] = "M";
-$simbols["kingdom"]["p1"] = "O";
+$symbols["kingdom"]["k1"] = "L";
+$symbols["kingdom"]["q1"] = "W";
+$symbols["kingdom"]["r1"] = "T";
+$symbols["kingdom"]["b1"] = "V";
+$symbols["kingdom"]["n1"] = "M";
+$symbols["kingdom"]["p1"] = "O";
 
-$simbols["kingdom"]["X0"] = 'x';
-$simbols["kingdom"]["X1"] = 'X';
+$symbols["kingdom"]["X0"] = 'x';
+$symbols["kingdom"]["X1"] = 'X';
 
-$simbols["kingdom"]["delta"] = 0;
+$symbols["kingdom"]["delta"] = 0;

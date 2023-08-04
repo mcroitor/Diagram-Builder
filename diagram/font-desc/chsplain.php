@@ -1,61 +1,61 @@
 <?php
-$simbols["chsplain"] = array();
+$symbols["chsplain"] = array();
 
-$simbols["chsplain"]["8"] = "$";
-$simbols["chsplain"]["7"] = "$";
-$simbols["chsplain"]["6"] = "$";
-$simbols["chsplain"]["5"] = "$";
-$simbols["chsplain"]["4"] = "$";
-$simbols["chsplain"]["3"] = "$";
-$simbols["chsplain"]["2"] = "$";
-$simbols["chsplain"]["1"] = "$";
+$symbols["chsplain"]["8"] = "$";
+$symbols["chsplain"]["7"] = "$";
+$symbols["chsplain"]["6"] = "$";
+$symbols["chsplain"]["5"] = "$";
+$symbols["chsplain"]["4"] = "$";
+$symbols["chsplain"]["3"] = "$";
+$symbols["chsplain"]["2"] = "$";
+$symbols["chsplain"]["1"] = "$";
 
-$simbols["chsplain"]["|"] = "%";
-$simbols["chsplain"]["top"] = "A\"\"\"\"\"\"\"\"S";
-$simbols["chsplain"]["bottom"] = "D((((((((F";
-$simbols["chsplain"]["/"] = "$";
+$symbols["chsplain"]["|"] = "%";
+$symbols["chsplain"]["top"] = "A\"\"\"\"\"\"\"\"S";
+$symbols["chsplain"]["bottom"] = "D((((((((F";
+$symbols["chsplain"]["/"] = "$";
 
-$simbols["chsplain"]["-"] = " ";
-$simbols["chsplain"]["+"] = "@";
+$symbols["chsplain"]["-"] = " ";
+$symbols["chsplain"]["+"] = "@";
 
-$simbols["chsplain"]["a"] = "a";
-$simbols["chsplain"]["b"] = "b";
-$simbols["chsplain"]["c"] = "c";
-$simbols["chsplain"]["d"] = "d";
-$simbols["chsplain"]["e"] = "e";
-$simbols["chsplain"]["f"] = "f";
-$simbols["chsplain"]["g"] = "g";
-$simbols["chsplain"]["h"] = "h";
+$symbols["chsplain"]["a"] = "a";
+$symbols["chsplain"]["b"] = "b";
+$symbols["chsplain"]["c"] = "c";
+$symbols["chsplain"]["d"] = "d";
+$symbols["chsplain"]["e"] = "e";
+$symbols["chsplain"]["f"] = "f";
+$symbols["chsplain"]["g"] = "g";
+$symbols["chsplain"]["h"] = "h";
 
-$simbols["chsplain"]["K0"] = "k";
-$simbols["chsplain"]["Q0"] = "q";
-$simbols["chsplain"]["R0"] = "r";
-$simbols["chsplain"]["B0"] = "b";
-$simbols["chsplain"]["N0"] = "n";
-$simbols["chsplain"]["P0"] = "p";
+$symbols["chsplain"]["K0"] = "k";
+$symbols["chsplain"]["Q0"] = "q";
+$symbols["chsplain"]["R0"] = "r";
+$symbols["chsplain"]["B0"] = "b";
+$symbols["chsplain"]["N0"] = "n";
+$symbols["chsplain"]["P0"] = "p";
 
-$simbols["chsplain"]["K1"] = "K";
-$simbols["chsplain"]["Q1"] = "Q";
-$simbols["chsplain"]["R1"] = "R";
-$simbols["chsplain"]["B1"] = "B";
-$simbols["chsplain"]["N1"] = "N";
-$simbols["chsplain"]["P1"] = "P";
+$symbols["chsplain"]["K1"] = "K";
+$symbols["chsplain"]["Q1"] = "Q";
+$symbols["chsplain"]["R1"] = "R";
+$symbols["chsplain"]["B1"] = "B";
+$symbols["chsplain"]["N1"] = "N";
+$symbols["chsplain"]["P1"] = "P";
 
-$simbols["chsplain"]["k0"] = "l";
-$simbols["chsplain"]["q0"] = "t";
-$simbols["chsplain"]["r0"] = "s";
-$simbols["chsplain"]["b0"] = "a";
-$simbols["chsplain"]["n0"] = "m";
-$simbols["chsplain"]["p0"] = "o";
+$symbols["chsplain"]["k0"] = "l";
+$symbols["chsplain"]["q0"] = "t";
+$symbols["chsplain"]["r0"] = "s";
+$symbols["chsplain"]["b0"] = "a";
+$symbols["chsplain"]["n0"] = "m";
+$symbols["chsplain"]["p0"] = "o";
 
-$simbols["chsplain"]["k1"] = "L";
-$simbols["chsplain"]["q1"] = "T";
-$simbols["chsplain"]["r1"] = "S";
-$simbols["chsplain"]["b1"] = "A";
-$simbols["chsplain"]["n1"] = "M";
-$simbols["chsplain"]["p1"] = "O";
+$symbols["chsplain"]["k1"] = "L";
+$symbols["chsplain"]["q1"] = "T";
+$symbols["chsplain"]["r1"] = "S";
+$symbols["chsplain"]["b1"] = "A";
+$symbols["chsplain"]["n1"] = "M";
+$symbols["chsplain"]["p1"] = "O";
 
-$simbols["chsplain"]["X0"] = 'W';
-$simbols["chsplain"]["X1"] = 'X';
+$symbols["chsplain"]["X0"] = 'W';
+$symbols["chsplain"]["X1"] = 'X';
 
-$simbols["chsplain"]["delta"] = 0;
+$symbols["chsplain"]["delta"] = 0;

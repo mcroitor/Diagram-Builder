@@ -1,5 +1,5 @@
 <?php
-$simbols["chess7"] = array();
+$symbols["chess7"] = array();
 
 /*
 !""""""""#
@@ -14,61 +14,61 @@ $simbols["chess7"] = array();
 /Г€Г‰ГЉГ‹ГЊГЌГЋГЏ)
 */
 
-$simbols["chess7"]["8"] = "à";
-$simbols["chess7"]["7"] = "á";
-$simbols["chess7"]["6"] = "â";
-$simbols["chess7"]["5"] = "ã";
-$simbols["chess7"]["4"] = "ä";
-$simbols["chess7"]["3"] = "å";
-$simbols["chess7"]["2"] = "æ";
-$simbols["chess7"]["1"] = "ç";
+$symbols["chess7"]["8"] = "à";
+$symbols["chess7"]["7"] = "á";
+$symbols["chess7"]["6"] = "â";
+$symbols["chess7"]["5"] = "ã";
+$symbols["chess7"]["4"] = "ä";
+$symbols["chess7"]["3"] = "å";
+$symbols["chess7"]["2"] = "æ";
+$symbols["chess7"]["1"] = "ç";
 
-$simbols["chess7"]["|"] = "%";
-$simbols["chess7"]["top"] = "!\"\"\"\"\"\"\"\"#";
-$simbols["chess7"]["bottom"] = "/èéêëìíîï)";
-$simbols["chess7"]["/"] = "%";
+$symbols["chess7"]["|"] = "%";
+$symbols["chess7"]["top"] = "!\"\"\"\"\"\"\"\"#";
+$symbols["chess7"]["bottom"] = "/èéêëìíîï)";
+$symbols["chess7"]["/"] = "%";
 
-$simbols["chess7"]["-"] = " ";
-$simbols["chess7"]["+"] = "+";
+$symbols["chess7"]["-"] = " ";
+$symbols["chess7"]["+"] = "+";
 
-$simbols["chess7"]["a"] = "a";
-$simbols["chess7"]["b"] = "b";
-$simbols["chess7"]["c"] = "c";
-$simbols["chess7"]["d"] = "d";
-$simbols["chess7"]["e"] = "e";
-$simbols["chess7"]["f"] = "f";
-$simbols["chess7"]["g"] = "g";
-$simbols["chess7"]["h"] = "h";
+$symbols["chess7"]["a"] = "a";
+$symbols["chess7"]["b"] = "b";
+$symbols["chess7"]["c"] = "c";
+$symbols["chess7"]["d"] = "d";
+$symbols["chess7"]["e"] = "e";
+$symbols["chess7"]["f"] = "f";
+$symbols["chess7"]["g"] = "g";
+$symbols["chess7"]["h"] = "h";
 
-$simbols["chess7"]["K0"] = "k";
-$simbols["chess7"]["Q0"] = "q";
-$simbols["chess7"]["R0"] = "r";
-$simbols["chess7"]["B0"] = "b";
-$simbols["chess7"]["N0"] = "n";
-$simbols["chess7"]["P0"] = "p";
+$symbols["chess7"]["K0"] = "k";
+$symbols["chess7"]["Q0"] = "q";
+$symbols["chess7"]["R0"] = "r";
+$symbols["chess7"]["B0"] = "b";
+$symbols["chess7"]["N0"] = "n";
+$symbols["chess7"]["P0"] = "p";
 
-$simbols["chess7"]["K1"] = "K";
-$simbols["chess7"]["Q1"] = "Q";
-$simbols["chess7"]["R1"] = "R";
-$simbols["chess7"]["B1"] = "B";
-$simbols["chess7"]["N1"] = "N";
-$simbols["chess7"]["P1"] = "P";
+$symbols["chess7"]["K1"] = "K";
+$symbols["chess7"]["Q1"] = "Q";
+$symbols["chess7"]["R1"] = "R";
+$symbols["chess7"]["B1"] = "B";
+$symbols["chess7"]["N1"] = "N";
+$symbols["chess7"]["P1"] = "P";
 
-$simbols["chess7"]["k0"] = "l";
-$simbols["chess7"]["q0"] = "w";
-$simbols["chess7"]["r0"] = "t";
-$simbols["chess7"]["b0"] = "v";
-$simbols["chess7"]["n0"] = "m";
-$simbols["chess7"]["p0"] = "o";
+$symbols["chess7"]["k0"] = "l";
+$symbols["chess7"]["q0"] = "w";
+$symbols["chess7"]["r0"] = "t";
+$symbols["chess7"]["b0"] = "v";
+$symbols["chess7"]["n0"] = "m";
+$symbols["chess7"]["p0"] = "o";
 
-$simbols["chess7"]["k1"] = "L";
-$simbols["chess7"]["q1"] = "W";
-$simbols["chess7"]["r1"] = "T";
-$simbols["chess7"]["b1"] = "V";
-$simbols["chess7"]["n1"] = "M";
-$simbols["chess7"]["p1"] = "O";
+$symbols["chess7"]["k1"] = "L";
+$symbols["chess7"]["q1"] = "W";
+$symbols["chess7"]["r1"] = "T";
+$symbols["chess7"]["b1"] = "V";
+$symbols["chess7"]["n1"] = "M";
+$symbols["chess7"]["p1"] = "O";
 
-$simbols["chess7"]["X0"] = 'x';
-$simbols["chess7"]["X1"] = 'X';
+$symbols["chess7"]["X0"] = 'x';
+$symbols["chess7"]["X1"] = 'X';
 
-$simbols["chess7"]["delta"] = 0;
+$symbols["chess7"]["delta"] = 0;

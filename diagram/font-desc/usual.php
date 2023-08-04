@@ -1,62 +1,62 @@
 <?php
-$simbols["usual"] = array();
+$symbols["usual"] = array();
 
 
-$simbols["usual"]["8"] = "$";
-$simbols["usual"]["7"] = "$";
-$simbols["usual"]["6"] = "$";
-$simbols["usual"]["5"] = "$";
-$simbols["usual"]["4"] = "$";
-$simbols["usual"]["3"] = "$";
-$simbols["usual"]["2"] = "$";
-$simbols["usual"]["1"] = "$";
+$symbols["usual"]["8"] = "$";
+$symbols["usual"]["7"] = "$";
+$symbols["usual"]["6"] = "$";
+$symbols["usual"]["5"] = "$";
+$symbols["usual"]["4"] = "$";
+$symbols["usual"]["3"] = "$";
+$symbols["usual"]["2"] = "$";
+$symbols["usual"]["1"] = "$";
 
-$simbols["usual"]["|"] = "%";
-$simbols["usual"]["top"] = "A\"\"\"\"\"\"\"\"S";
-$simbols["usual"]["bottom"] = "D((((((((F"; //"7888888889";
-$simbols["usual"]["/"] = "$";
+$symbols["usual"]["|"] = "%";
+$symbols["usual"]["top"] = "A\"\"\"\"\"\"\"\"S";
+$symbols["usual"]["bottom"] = "D((((((((F"; //"7888888889";
+$symbols["usual"]["/"] = "$";
 
-$simbols["usual"]["-"] = " ";
-$simbols["usual"]["+"] = "+";
+$symbols["usual"]["-"] = " ";
+$symbols["usual"]["+"] = "+";
 
-$simbols["usual"]["a"] = "и";
-$simbols["usual"]["b"] = "й";
-$simbols["usual"]["c"] = "к";
-$simbols["usual"]["d"] = "л";
-$simbols["usual"]["e"] = "м";
-$simbols["usual"]["f"] = "н";
-$simbols["usual"]["g"] = "о";
-$simbols["usual"]["h"] = "п";
+$symbols["usual"]["a"] = "и";
+$symbols["usual"]["b"] = "й";
+$symbols["usual"]["c"] = "к";
+$symbols["usual"]["d"] = "л";
+$symbols["usual"]["e"] = "м";
+$symbols["usual"]["f"] = "н";
+$symbols["usual"]["g"] = "о";
+$symbols["usual"]["h"] = "п";
 
-$simbols["usual"]["K0"] = "k";
-$simbols["usual"]["Q0"] = "q";
-$simbols["usual"]["R0"] = "r";
-$simbols["usual"]["B0"] = "b";
-$simbols["usual"]["N0"] = "n";
-$simbols["usual"]["P0"] = "p";
+$symbols["usual"]["K0"] = "k";
+$symbols["usual"]["Q0"] = "q";
+$symbols["usual"]["R0"] = "r";
+$symbols["usual"]["B0"] = "b";
+$symbols["usual"]["N0"] = "n";
+$symbols["usual"]["P0"] = "p";
 
-$simbols["usual"]["K1"] = "K";
-$simbols["usual"]["Q1"] = "Q";
-$simbols["usual"]["R1"] = "R";
-$simbols["usual"]["B1"] = "B";
-$simbols["usual"]["N1"] = "N";
-$simbols["usual"]["P1"] = "P";
+$symbols["usual"]["K1"] = "K";
+$symbols["usual"]["Q1"] = "Q";
+$symbols["usual"]["R1"] = "R";
+$symbols["usual"]["B1"] = "B";
+$symbols["usual"]["N1"] = "N";
+$symbols["usual"]["P1"] = "P";
 
-$simbols["usual"]["k0"] = "l";
-$simbols["usual"]["q0"] = "w";
-$simbols["usual"]["r0"] = "t";
-$simbols["usual"]["b0"] = "v";
-$simbols["usual"]["n0"] = "m";
-$simbols["usual"]["p0"] = "o";
+$symbols["usual"]["k0"] = "l";
+$symbols["usual"]["q0"] = "w";
+$symbols["usual"]["r0"] = "t";
+$symbols["usual"]["b0"] = "v";
+$symbols["usual"]["n0"] = "m";
+$symbols["usual"]["p0"] = "o";
 
-$simbols["usual"]["k1"] = "L";
-$simbols["usual"]["q1"] = "W";
-$simbols["usual"]["r1"] = "T";
-$simbols["usual"]["b1"] = "V";
-$simbols["usual"]["n1"] = "M";
-$simbols["usual"]["p1"] = "O";
+$symbols["usual"]["k1"] = "L";
+$symbols["usual"]["q1"] = "W";
+$symbols["usual"]["r1"] = "T";
+$symbols["usual"]["b1"] = "V";
+$symbols["usual"]["n1"] = "M";
+$symbols["usual"]["p1"] = "O";
 
-$simbols["usual"]["X0"] = 'x';
-$simbols["usual"]["X1"] = 'X';
+$symbols["usual"]["X0"] = 'x';
+$symbols["usual"]["X1"] = 'X';
 
-$simbols["usual"]["delta"] = 0;
+$symbols["usual"]["delta"] = 0;

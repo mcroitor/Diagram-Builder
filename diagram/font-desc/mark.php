@@ -1,62 +1,62 @@
 <?php
-$simbols["mark"] = array();
+$symbols["mark"] = array();
 
 
-$simbols["mark"]["8"] = "$";
-$simbols["mark"]["7"] = "$";
-$simbols["mark"]["6"] = "$";
-$simbols["mark"]["5"] = "$";
-$simbols["mark"]["4"] = "$";
-$simbols["mark"]["3"] = "$";
-$simbols["mark"]["2"] = "$";
-$simbols["mark"]["1"] = "$";
+$symbols["mark"]["8"] = "$";
+$symbols["mark"]["7"] = "$";
+$symbols["mark"]["6"] = "$";
+$symbols["mark"]["5"] = "$";
+$symbols["mark"]["4"] = "$";
+$symbols["mark"]["3"] = "$";
+$symbols["mark"]["2"] = "$";
+$symbols["mark"]["1"] = "$";
 
-$simbols["mark"]["|"] = "%";
-$simbols["mark"]["top"] = "!\"\"\"\"\"\"\"\"#";
-$simbols["mark"]["bottom"] = "/(((((((()";
-$simbols["mark"]["/"] = "$";
+$symbols["mark"]["|"] = "%";
+$symbols["mark"]["top"] = "!\"\"\"\"\"\"\"\"#";
+$symbols["mark"]["bottom"] = "/(((((((()";
+$symbols["mark"]["/"] = "$";
 
-$simbols["mark"]["-"] = " ";
-$simbols["mark"]["+"] = "+";
+$symbols["mark"]["-"] = " ";
+$symbols["mark"]["+"] = "+";
 
-$simbols["mark"]["a"] = "ё";
-$simbols["mark"]["b"] = "№";
-$simbols["mark"]["c"] = "є";
-$simbols["mark"]["d"] = "»";
-$simbols["mark"]["e"] = "ј";
-$simbols["mark"]["f"] = "Ѕ";
-$simbols["mark"]["g"] = "ѕ";
-$simbols["mark"]["h"] = "ї";
+$symbols["mark"]["a"] = "ё";
+$symbols["mark"]["b"] = "№";
+$symbols["mark"]["c"] = "є";
+$symbols["mark"]["d"] = "»";
+$symbols["mark"]["e"] = "ј";
+$symbols["mark"]["f"] = "Ѕ";
+$symbols["mark"]["g"] = "ѕ";
+$symbols["mark"]["h"] = "ї";
 
-$simbols["mark"]["K0"] = "k";
-$simbols["mark"]["Q0"] = "q";
-$simbols["mark"]["R0"] = "r";
-$simbols["mark"]["B0"] = "b";
-$simbols["mark"]["N0"] = "n";
-$simbols["mark"]["P0"] = "p";
+$symbols["mark"]["K0"] = "k";
+$symbols["mark"]["Q0"] = "q";
+$symbols["mark"]["R0"] = "r";
+$symbols["mark"]["B0"] = "b";
+$symbols["mark"]["N0"] = "n";
+$symbols["mark"]["P0"] = "p";
 
-$simbols["mark"]["K1"] = "K";
-$simbols["mark"]["Q1"] = "Q";
-$simbols["mark"]["R1"] = "R";
-$simbols["mark"]["B1"] = "B";
-$simbols["mark"]["N1"] = "N";
-$simbols["mark"]["P1"] = "P";
+$symbols["mark"]["K1"] = "K";
+$symbols["mark"]["Q1"] = "Q";
+$symbols["mark"]["R1"] = "R";
+$symbols["mark"]["B1"] = "B";
+$symbols["mark"]["N1"] = "N";
+$symbols["mark"]["P1"] = "P";
 
-$simbols["mark"]["k0"] = "l";
-$simbols["mark"]["q0"] = "w";
-$simbols["mark"]["r0"] = "t";
-$simbols["mark"]["b0"] = "v";
-$simbols["mark"]["n0"] = "m";
-$simbols["mark"]["p0"] = "o";
+$symbols["mark"]["k0"] = "l";
+$symbols["mark"]["q0"] = "w";
+$symbols["mark"]["r0"] = "t";
+$symbols["mark"]["b0"] = "v";
+$symbols["mark"]["n0"] = "m";
+$symbols["mark"]["p0"] = "o";
 
-$simbols["mark"]["k1"] = "L";
-$simbols["mark"]["q1"] = "W";
-$simbols["mark"]["r1"] = "T";
-$simbols["mark"]["b1"] = "W";
-$simbols["mark"]["n1"] = "M";
-$simbols["mark"]["p1"] = "O";
+$symbols["mark"]["k1"] = "L";
+$symbols["mark"]["q1"] = "W";
+$symbols["mark"]["r1"] = "T";
+$symbols["mark"]["b1"] = "W";
+$symbols["mark"]["n1"] = "M";
+$symbols["mark"]["p1"] = "O";
 
-$simbols["mark"]["X0"] = 'x';
-$simbols["mark"]["X1"] = 'X';
+$symbols["mark"]["X0"] = 'x';
+$symbols["mark"]["X1"] = 'X';
 
-$simbols["mark"]["delta"] = 0;
+$symbols["mark"]["delta"] = 0;

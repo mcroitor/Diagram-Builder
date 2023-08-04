@@ -1,61 +1,61 @@
 <?php
-$simbols["berlin"] = array();
+$symbols["berlin"] = array();
 
-$simbols["berlin"]["8"] = "4";
-$simbols["berlin"]["7"] = "4";
-$simbols["berlin"]["6"] = "4";
-$simbols["berlin"]["5"] = "4";
-$simbols["berlin"]["4"] = "4";
-$simbols["berlin"]["3"] = "4";
-$simbols["berlin"]["2"] = "4";
-$simbols["berlin"]["1"] = "4";
+$symbols["berlin"]["8"] = "4";
+$symbols["berlin"]["7"] = "4";
+$symbols["berlin"]["6"] = "4";
+$symbols["berlin"]["5"] = "4";
+$symbols["berlin"]["4"] = "4";
+$symbols["berlin"]["3"] = "4";
+$symbols["berlin"]["2"] = "4";
+$symbols["berlin"]["1"] = "4";
 
-$simbols["berlin"]["|"] = "5";
-$simbols["berlin"]["top"] = "1222222223"; //"!\"\"\"\"\"\"\"\"#";
-$simbols["berlin"]["bottom"] = "7888888889";
-$simbols["berlin"]["/"] = "4";
+$symbols["berlin"]["|"] = "5";
+$symbols["berlin"]["top"] = "1222222223"; //"!\"\"\"\"\"\"\"\"#";
+$symbols["berlin"]["bottom"] = "7888888889";
+$symbols["berlin"]["/"] = "4";
 
-$simbols["berlin"]["-"] = " ";
-$simbols["berlin"]["+"] = "+";
+$symbols["berlin"]["-"] = " ";
+$symbols["berlin"]["+"] = "+";
 
-$simbols["berlin"]["a"] = "a";
-$simbols["berlin"]["b"] = "b";
-$simbols["berlin"]["c"] = "c";
-$simbols["berlin"]["d"] = "d";
-$simbols["berlin"]["e"] = "e";
-$simbols["berlin"]["f"] = "f";
-$simbols["berlin"]["g"] = "g";
-$simbols["berlin"]["h"] = "h";
+$symbols["berlin"]["a"] = "a";
+$symbols["berlin"]["b"] = "b";
+$symbols["berlin"]["c"] = "c";
+$symbols["berlin"]["d"] = "d";
+$symbols["berlin"]["e"] = "e";
+$symbols["berlin"]["f"] = "f";
+$symbols["berlin"]["g"] = "g";
+$symbols["berlin"]["h"] = "h";
 
-$simbols["berlin"]["K0"] = "k";
-$simbols["berlin"]["Q0"] = "q";
-$simbols["berlin"]["R0"] = "r";
-$simbols["berlin"]["B0"] = "b";
-$simbols["berlin"]["N0"] = "h";
-$simbols["berlin"]["P0"] = "p";
+$symbols["berlin"]["K0"] = "k";
+$symbols["berlin"]["Q0"] = "q";
+$symbols["berlin"]["R0"] = "r";
+$symbols["berlin"]["B0"] = "b";
+$symbols["berlin"]["N0"] = "h";
+$symbols["berlin"]["P0"] = "p";
 
-$simbols["berlin"]["K1"] = "K";
-$simbols["berlin"]["Q1"] = "Q";
-$simbols["berlin"]["R1"] = "R";
-$simbols["berlin"]["B1"] = "B";
-$simbols["berlin"]["N1"] = "H";
-$simbols["berlin"]["P1"] = "P";
+$symbols["berlin"]["K1"] = "K";
+$symbols["berlin"]["Q1"] = "Q";
+$symbols["berlin"]["R1"] = "R";
+$symbols["berlin"]["B1"] = "B";
+$symbols["berlin"]["N1"] = "H";
+$symbols["berlin"]["P1"] = "P";
 
-$simbols["berlin"]["k0"] = "l";
-$simbols["berlin"]["q0"] = "w";
-$simbols["berlin"]["r0"] = "t";
-$simbols["berlin"]["b0"] = "n";
-$simbols["berlin"]["n0"] = "j";
-$simbols["berlin"]["p0"] = "o";
+$symbols["berlin"]["k0"] = "l";
+$symbols["berlin"]["q0"] = "w";
+$symbols["berlin"]["r0"] = "t";
+$symbols["berlin"]["b0"] = "n";
+$symbols["berlin"]["n0"] = "j";
+$symbols["berlin"]["p0"] = "o";
 
-$simbols["berlin"]["k1"] = "L";
-$simbols["berlin"]["q1"] = "W";
-$simbols["berlin"]["r1"] = "T";
-$simbols["berlin"]["b1"] = "N";
-$simbols["berlin"]["n1"] = "J";
-$simbols["berlin"]["p1"] = "O";
+$symbols["berlin"]["k1"] = "L";
+$symbols["berlin"]["q1"] = "W";
+$symbols["berlin"]["r1"] = "T";
+$symbols["berlin"]["b1"] = "N";
+$symbols["berlin"]["n1"] = "J";
+$symbols["berlin"]["p1"] = "O";
 
-$simbols["berlin"]["X0"] = 'x';
-$simbols["berlin"]["X1"] = 'X';
+$symbols["berlin"]["X0"] = 'x';
+$symbols["berlin"]["X1"] = 'X';
 
-$simbols["berlin"]["delta"] = 0;
+$symbols["berlin"]["delta"] = 0;

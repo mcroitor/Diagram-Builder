@@ -1,0 +1,97 @@
+table#board {
+    width: 240px !important;
+    height: 240px !important;
+    border: 1px solid #888;
+    padding: 0px !important;
+    margin: 0px !important;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table#board tr td {
+    width: 30px !important;
+    height: 30px !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    border: 0px !important;
+}
+
+table#board tr td img {
+    margin: 2px !important;
+    padding: 0px !important;
+    border: 0px !important;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.even {
+    background-color: #fff;
+}
+
+.odd {
+    background-color: #ccc;
+}
+
+table#pieces {
+    width: 300px !important;
+    height: 60px !important;
+    border: 1px solid #888;
+    padding: 0px !important;
+    margin: 0px !important;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table#pieces tr td {
+    width: 30px !important;
+    height: 30px !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    border: 0px !important;
+}
+
+table#pieces tr td img {
+    margin: 0px !important;
+    padding: 0px !important;
+    border: 2px solid white;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#transform-position {
+    width: 300px !important;
+    height: 30px !important;
+    border: 1px solid #888;
+    padding: 0px !important;
+    margin: 0px !important;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table#transform-position tr td {
+    width: 30px !important;
+    height: 30px !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    border: 0px !important;
+}
+
+table#transform-position tr td img {
+    margin: 0px !important;
+    padding: 0px !important;
+    border: 0px !important;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#size {
+    width: 50px;
+}
+
+#style {
+    width: 100px;
+}
+
+#color {
+    width: 142px;
+}

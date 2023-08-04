@@ -1,62 +1,62 @@
 <?php
-$simbols["marroquin"] = array();
+$symbols["marroquin"] = array();
 
 
-$simbols["marroquin"]["8"] = "4";
-$simbols["marroquin"]["7"] = "4";
-$simbols["marroquin"]["6"] = "4";
-$simbols["marroquin"]["5"] = "4";
-$simbols["marroquin"]["4"] = "4";
-$simbols["marroquin"]["3"] = "4";
-$simbols["marroquin"]["2"] = "4";
-$simbols["marroquin"]["1"] = "4";
+$symbols["marroquin"]["8"] = "4";
+$symbols["marroquin"]["7"] = "4";
+$symbols["marroquin"]["6"] = "4";
+$symbols["marroquin"]["5"] = "4";
+$symbols["marroquin"]["4"] = "4";
+$symbols["marroquin"]["3"] = "4";
+$symbols["marroquin"]["2"] = "4";
+$symbols["marroquin"]["1"] = "4";
 
-$simbols["marroquin"]["|"] = "5";
-$simbols["marroquin"]["top"] = "1222222223";
-$simbols["marroquin"]["bottom"] = "7888888889";
-$simbols["marroquin"]["/"] = "4";
+$symbols["marroquin"]["|"] = "5";
+$symbols["marroquin"]["top"] = "1222222223";
+$symbols["marroquin"]["bottom"] = "7888888889";
+$symbols["marroquin"]["/"] = "4";
 
-$simbols["marroquin"]["-"] = " ";
-$simbols["marroquin"]["+"] = "+";
+$symbols["marroquin"]["-"] = " ";
+$symbols["marroquin"]["+"] = "+";
 
-$simbols["marroquin"]["a"] = "и";
-$simbols["marroquin"]["b"] = "й";
-$simbols["marroquin"]["c"] = "к";
-$simbols["marroquin"]["d"] = "л";
-$simbols["marroquin"]["e"] = "м";
-$simbols["marroquin"]["f"] = "н";
-$simbols["marroquin"]["g"] = "о";
-$simbols["marroquin"]["h"] = "п";
+$symbols["marroquin"]["a"] = "и";
+$symbols["marroquin"]["b"] = "й";
+$symbols["marroquin"]["c"] = "к";
+$symbols["marroquin"]["d"] = "л";
+$symbols["marroquin"]["e"] = "м";
+$symbols["marroquin"]["f"] = "н";
+$symbols["marroquin"]["g"] = "о";
+$symbols["marroquin"]["h"] = "п";
 
-$simbols["marroquin"]["K0"] = "k";
-$simbols["marroquin"]["Q0"] = "q";
-$simbols["marroquin"]["R0"] = "r";
-$simbols["marroquin"]["B0"] = "b";
-$simbols["marroquin"]["N0"] = "n";
-$simbols["marroquin"]["P0"] = "p";
+$symbols["marroquin"]["K0"] = "k";
+$symbols["marroquin"]["Q0"] = "q";
+$symbols["marroquin"]["R0"] = "r";
+$symbols["marroquin"]["B0"] = "b";
+$symbols["marroquin"]["N0"] = "n";
+$symbols["marroquin"]["P0"] = "p";
 
-$simbols["marroquin"]["K1"] = "K";
-$simbols["marroquin"]["Q1"] = "Q";
-$simbols["marroquin"]["R1"] = "R";
-$simbols["marroquin"]["B1"] = "B";
-$simbols["marroquin"]["N1"] = "N";
-$simbols["marroquin"]["P1"] = "P";
+$symbols["marroquin"]["K1"] = "K";
+$symbols["marroquin"]["Q1"] = "Q";
+$symbols["marroquin"]["R1"] = "R";
+$symbols["marroquin"]["B1"] = "B";
+$symbols["marroquin"]["N1"] = "N";
+$symbols["marroquin"]["P1"] = "P";
 
-$simbols["marroquin"]["k0"] = "l";
-$simbols["marroquin"]["q0"] = "w";
-$simbols["marroquin"]["r0"] = "t";
-$simbols["marroquin"]["b0"] = "v";
-$simbols["marroquin"]["n0"] = "m";
-$simbols["marroquin"]["p0"] = "o";
+$symbols["marroquin"]["k0"] = "l";
+$symbols["marroquin"]["q0"] = "w";
+$symbols["marroquin"]["r0"] = "t";
+$symbols["marroquin"]["b0"] = "v";
+$symbols["marroquin"]["n0"] = "m";
+$symbols["marroquin"]["p0"] = "o";
 
-$simbols["marroquin"]["k1"] = "L";
-$simbols["marroquin"]["q1"] = "W";
-$simbols["marroquin"]["r1"] = "T";
-$simbols["marroquin"]["b1"] = "V";
-$simbols["marroquin"]["n1"] = "M";
-$simbols["marroquin"]["p1"] = "O";
+$symbols["marroquin"]["k1"] = "L";
+$symbols["marroquin"]["q1"] = "W";
+$symbols["marroquin"]["r1"] = "T";
+$symbols["marroquin"]["b1"] = "V";
+$symbols["marroquin"]["n1"] = "M";
+$symbols["marroquin"]["p1"] = "O";
 
-$simbols["marroquin"]["X0"] = 'x';
-$simbols["marroquin"]["X1"] = 'X';
+$symbols["marroquin"]["X0"] = 'x';
+$symbols["marroquin"]["X1"] = 'X';
 
-$simbols["marroquin"]["delta"] = 0;
+$symbols["marroquin"]["delta"] = 0;

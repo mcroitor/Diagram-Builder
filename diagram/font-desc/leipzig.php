@@ -1,62 +1,62 @@
 <?php
-$simbols["leipzig"] = array();
+$symbols["leipzig"] = array();
 
 
-$simbols["leipzig"]["8"] = "$";
-$simbols["leipzig"]["7"] = "$";
-$simbols["leipzig"]["6"] = "$";
-$simbols["leipzig"]["5"] = "$";
-$simbols["leipzig"]["4"] = "$";
-$simbols["leipzig"]["3"] = "$";
-$simbols["leipzig"]["2"] = "$";
-$simbols["leipzig"]["1"] = "$";
+$symbols["leipzig"]["8"] = "$";
+$symbols["leipzig"]["7"] = "$";
+$symbols["leipzig"]["6"] = "$";
+$symbols["leipzig"]["5"] = "$";
+$symbols["leipzig"]["4"] = "$";
+$symbols["leipzig"]["3"] = "$";
+$symbols["leipzig"]["2"] = "$";
+$symbols["leipzig"]["1"] = "$";
 
-$simbols["leipzig"]["|"] = "%";
-$simbols["leipzig"]["top"] = "A\"\"\"\"\"\"\"\"S"; // "1222222223";
-$simbols["leipzig"]["bottom"] = "D((((((((F";
-$simbols["leipzig"]["/"] = "%";
+$symbols["leipzig"]["|"] = "%";
+$symbols["leipzig"]["top"] = "A\"\"\"\"\"\"\"\"S"; // "1222222223";
+$symbols["leipzig"]["bottom"] = "D((((((((F";
+$symbols["leipzig"]["/"] = "%";
 
-$simbols["leipzig"]["-"] = " ";
-$simbols["leipzig"]["+"] = "+";
+$symbols["leipzig"]["-"] = " ";
+$symbols["leipzig"]["+"] = "+";
 
-$simbols["leipzig"]["a"] = "и";
-$simbols["leipzig"]["b"] = "й";
-$simbols["leipzig"]["c"] = "к";
-$simbols["leipzig"]["d"] = "л";
-$simbols["leipzig"]["e"] = "м";
-$simbols["leipzig"]["f"] = "н";
-$simbols["leipzig"]["g"] = "о";
-$simbols["leipzig"]["h"] = "п";
+$symbols["leipzig"]["a"] = "и";
+$symbols["leipzig"]["b"] = "й";
+$symbols["leipzig"]["c"] = "к";
+$symbols["leipzig"]["d"] = "л";
+$symbols["leipzig"]["e"] = "м";
+$symbols["leipzig"]["f"] = "н";
+$symbols["leipzig"]["g"] = "о";
+$symbols["leipzig"]["h"] = "п";
 
-$simbols["leipzig"]["K0"] = "k";
-$simbols["leipzig"]["Q0"] = "q";
-$simbols["leipzig"]["R0"] = "r";
-$simbols["leipzig"]["B0"] = "b";
-$simbols["leipzig"]["N0"] = "n";
-$simbols["leipzig"]["P0"] = "p";
+$symbols["leipzig"]["K0"] = "k";
+$symbols["leipzig"]["Q0"] = "q";
+$symbols["leipzig"]["R0"] = "r";
+$symbols["leipzig"]["B0"] = "b";
+$symbols["leipzig"]["N0"] = "n";
+$symbols["leipzig"]["P0"] = "p";
 
-$simbols["leipzig"]["K1"] = "K";
-$simbols["leipzig"]["Q1"] = "Q";
-$simbols["leipzig"]["R1"] = "R";
-$simbols["leipzig"]["B1"] = "B";
-$simbols["leipzig"]["N1"] = "N";
-$simbols["leipzig"]["P1"] = "P";
+$symbols["leipzig"]["K1"] = "K";
+$symbols["leipzig"]["Q1"] = "Q";
+$symbols["leipzig"]["R1"] = "R";
+$symbols["leipzig"]["B1"] = "B";
+$symbols["leipzig"]["N1"] = "N";
+$symbols["leipzig"]["P1"] = "P";
 
-$simbols["leipzig"]["k0"] = "l";
-$simbols["leipzig"]["q0"] = "w";
-$simbols["leipzig"]["r0"] = "t";
-$simbols["leipzig"]["b0"] = "v";
-$simbols["leipzig"]["n0"] = "m";
-$simbols["leipzig"]["p0"] = "o";
+$symbols["leipzig"]["k0"] = "l";
+$symbols["leipzig"]["q0"] = "w";
+$symbols["leipzig"]["r0"] = "t";
+$symbols["leipzig"]["b0"] = "v";
+$symbols["leipzig"]["n0"] = "m";
+$symbols["leipzig"]["p0"] = "o";
 
-$simbols["leipzig"]["k1"] = "L";
-$simbols["leipzig"]["q1"] = "W";
-$simbols["leipzig"]["r1"] = "T";
-$simbols["leipzig"]["b1"] = "V";
-$simbols["leipzig"]["n1"] = "M";
-$simbols["leipzig"]["p1"] = "O";
+$symbols["leipzig"]["k1"] = "L";
+$symbols["leipzig"]["q1"] = "W";
+$symbols["leipzig"]["r1"] = "T";
+$symbols["leipzig"]["b1"] = "V";
+$symbols["leipzig"]["n1"] = "M";
+$symbols["leipzig"]["p1"] = "O";
 
-$simbols["leipzig"]["X0"] = 'x';
-$simbols["leipzig"]["X1"] = 'X';
+$symbols["leipzig"]["X0"] = 'x';
+$symbols["leipzig"]["X1"] = 'X';
 
-$simbols["leipzig"]["delta"] = 0;
+$symbols["leipzig"]["delta"] = 0;

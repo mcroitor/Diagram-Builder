@@ -1,5 +1,5 @@
 <?php
-$simbols["cheq"] = array();
+$symbols["cheq"] = array();
 
 /*
 !""""""""#
@@ -14,61 +14,61 @@ $simbols["cheq"] = array();
 /ÈÉÊËÌÍÎÏ)
 */
 
-$simbols["cheq"]["8"] = "/";
-$simbols["cheq"]["7"] = "/";
-$simbols["cheq"]["6"] = "/";
-$simbols["cheq"]["5"] = "/";
-$simbols["cheq"]["4"] = "/";
-$simbols["cheq"]["3"] = "/";
-$simbols["cheq"]["2"] = "/";
-$simbols["cheq"]["1"] = "/";
+$symbols["cheq"]["8"] = "/";
+$symbols["cheq"]["7"] = "/";
+$symbols["cheq"]["6"] = "/";
+$symbols["cheq"]["5"] = "/";
+$symbols["cheq"]["4"] = "/";
+$symbols["cheq"]["3"] = "/";
+$symbols["cheq"]["2"] = "/";
+$symbols["cheq"]["1"] = "/";
 
-$simbols["cheq"]["|"] = "\\";
-$simbols["cheq"]["top"] = " -------- ";
-$simbols["cheq"]["bottom"] = " ________ ";
-$simbols["cheq"]["/"] = "/";
+$symbols["cheq"]["|"] = "\\";
+$symbols["cheq"]["top"] = " -------- ";
+$symbols["cheq"]["bottom"] = " ________ ";
+$symbols["cheq"]["/"] = "/";
 
-$simbols["cheq"]["-"] = " ";
-$simbols["cheq"]["+"] = "+";
+$symbols["cheq"]["-"] = " ";
+$symbols["cheq"]["+"] = "+";
 
-$simbols["cheq"]["a"] = "a";
-$simbols["cheq"]["b"] = "b";
-$simbols["cheq"]["c"] = "c";
-$simbols["cheq"]["d"] = "d";
-$simbols["cheq"]["e"] = "e";
-$simbols["cheq"]["f"] = "f";
-$simbols["cheq"]["g"] = "g";
-$simbols["cheq"]["h"] = "h";
+$symbols["cheq"]["a"] = "a";
+$symbols["cheq"]["b"] = "b";
+$symbols["cheq"]["c"] = "c";
+$symbols["cheq"]["d"] = "d";
+$symbols["cheq"]["e"] = "e";
+$symbols["cheq"]["f"] = "f";
+$symbols["cheq"]["g"] = "g";
+$symbols["cheq"]["h"] = "h";
 
-$simbols["cheq"]["K0"] = "k";
-$simbols["cheq"]["Q0"] = "q";
-$simbols["cheq"]["R0"] = "r";
-$simbols["cheq"]["B0"] = "b";
-$simbols["cheq"]["N0"] = "h";
-$simbols["cheq"]["P0"] = "p";
+$symbols["cheq"]["K0"] = "k";
+$symbols["cheq"]["Q0"] = "q";
+$symbols["cheq"]["R0"] = "r";
+$symbols["cheq"]["B0"] = "b";
+$symbols["cheq"]["N0"] = "h";
+$symbols["cheq"]["P0"] = "p";
 
-$simbols["cheq"]["K1"] = "K";
-$simbols["cheq"]["Q1"] = "Q";
-$simbols["cheq"]["R1"] = "R";
-$simbols["cheq"]["B1"] = "B";
-$simbols["cheq"]["N1"] = "H";
-$simbols["cheq"]["P1"] = "P";
+$symbols["cheq"]["K1"] = "K";
+$symbols["cheq"]["Q1"] = "Q";
+$symbols["cheq"]["R1"] = "R";
+$symbols["cheq"]["B1"] = "B";
+$symbols["cheq"]["N1"] = "H";
+$symbols["cheq"]["P1"] = "P";
 
-$simbols["cheq"]["k0"] = "l";
-$simbols["cheq"]["q0"] = "w";
-$simbols["cheq"]["r0"] = "t";
-$simbols["cheq"]["b0"] = "n";
-$simbols["cheq"]["n0"] = "j";
-$simbols["cheq"]["p0"] = "o";
+$symbols["cheq"]["k0"] = "l";
+$symbols["cheq"]["q0"] = "w";
+$symbols["cheq"]["r0"] = "t";
+$symbols["cheq"]["b0"] = "n";
+$symbols["cheq"]["n0"] = "j";
+$symbols["cheq"]["p0"] = "o";
 
-$simbols["cheq"]["k1"] = "L";
-$simbols["cheq"]["q1"] = "W";
-$simbols["cheq"]["r1"] = "T";
-$simbols["cheq"]["b1"] = "N";
-$simbols["cheq"]["n1"] = "J";
-$simbols["cheq"]["p1"] = "O";
+$symbols["cheq"]["k1"] = "L";
+$symbols["cheq"]["q1"] = "W";
+$symbols["cheq"]["r1"] = "T";
+$symbols["cheq"]["b1"] = "N";
+$symbols["cheq"]["n1"] = "J";
+$symbols["cheq"]["p1"] = "O";
 
-$simbols["cheq"]["X0"] = 'x';
-$simbols["cheq"]["X1"] = 'X';
+$symbols["cheq"]["X0"] = 'x';
+$symbols["cheq"]["X1"] = 'X';
 
-$simbols["cheq"]["delta"] = -0.1;
+$symbols["cheq"]["delta"] = -0.1;

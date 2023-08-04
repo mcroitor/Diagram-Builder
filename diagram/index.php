@@ -7,7 +7,7 @@ if ($fen === false) {
 
 
 $options = array(
-    "size" => strtolower(filter_input(INPUT_GET, 'size', FILTER_VALIDATE_INT)),
+    "size" => strtolower(filter_input(INPUT_GET, 'size', FILTER_VALIDATE_INT) ?? 30),
     "style" => strtolower(filter_input(INPUT_GET, "style", FILTER_SANITIZE_FULL_SPECIAL_CHARS) ?? "alpha"),
     "solid" => filter_input(INPUT_GET, "solid", FILTER_VALIDATE_BOOLEAN),
     "color" => strtolower(filter_input(INPUT_GET, "color", FILTER_SANITIZE_FULL_SPECIAL_CHARS) ?? "black"),

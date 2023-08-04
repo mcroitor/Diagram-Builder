@@ -1,61 +1,61 @@
 <?php
-$simbols["spsl"] = array();
+$symbols["spsl"] = array();
 
-$simbols["spsl"]["8"] = "1";
-$simbols["spsl"]["7"] = "2";
-$simbols["spsl"]["6"] = "3";
-$simbols["spsl"]["5"] = "4";
-$simbols["spsl"]["4"] = "5";
-$simbols["spsl"]["3"] = "6";
-$simbols["spsl"]["2"] = "7";
-$simbols["spsl"]["1"] = "8";
+$symbols["spsl"]["8"] = "1";
+$symbols["spsl"]["7"] = "2";
+$symbols["spsl"]["6"] = "3";
+$symbols["spsl"]["5"] = "4";
+$symbols["spsl"]["4"] = "5";
+$symbols["spsl"]["3"] = "6";
+$symbols["spsl"]["2"] = "7";
+$symbols["spsl"]["1"] = "8";
 
-$simbols["spsl"]["|"] = "V";
-$simbols["spsl"]["top"] = "ОWWWWWWWWО"; //"!\"\"\"\"\"\"\"\"#";
-$simbols["spsl"]["bottom"] = "ОabcdefghО";
-$simbols["spsl"]["/"] = "4";
+$symbols["spsl"]["|"] = "V";
+$symbols["spsl"]["top"] = "ОWWWWWWWWО"; //"!\"\"\"\"\"\"\"\"#";
+$symbols["spsl"]["bottom"] = "ОabcdefghО";
+$symbols["spsl"]["/"] = "4";
 
-$simbols["spsl"]["-"] = "О";
-$simbols["spsl"]["+"] = "П";
+$symbols["spsl"]["-"] = "О";
+$symbols["spsl"]["+"] = "П";
 
-$simbols["spsl"]["a"] = "a";
-$simbols["spsl"]["b"] = "b";
-$simbols["spsl"]["c"] = "c";
-$simbols["spsl"]["d"] = "d";
-$simbols["spsl"]["e"] = "e";
-$simbols["spsl"]["f"] = "f";
-$simbols["spsl"]["g"] = "g";
-$simbols["spsl"]["h"] = "h";
+$symbols["spsl"]["a"] = "a";
+$symbols["spsl"]["b"] = "b";
+$symbols["spsl"]["c"] = "c";
+$symbols["spsl"]["d"] = "d";
+$symbols["spsl"]["e"] = "e";
+$symbols["spsl"]["f"] = "f";
+$symbols["spsl"]["g"] = "g";
+$symbols["spsl"]["h"] = "h";
 
-$simbols["spsl"]["K0"] = "Е";
-$simbols["spsl"]["Q0"] = "Д";
-$simbols["spsl"]["R0"] = "Г";
-$simbols["spsl"]["B0"] = "В";
-$simbols["spsl"]["N0"] = "Б";
-$simbols["spsl"]["P0"] = "А";
+$symbols["spsl"]["K0"] = "Е";
+$symbols["spsl"]["Q0"] = "Д";
+$symbols["spsl"]["R0"] = "Г";
+$symbols["spsl"]["B0"] = "В";
+$symbols["spsl"]["N0"] = "Б";
+$symbols["spsl"]["P0"] = "А";
 
-$simbols["spsl"]["K1"] = "е";
-$simbols["spsl"]["Q1"] = "д";
-$simbols["spsl"]["R1"] = "г";
-$simbols["spsl"]["B1"] = "в";
-$simbols["spsl"]["N1"] = "б";
-$simbols["spsl"]["P1"] = "а";
+$symbols["spsl"]["K1"] = "е";
+$symbols["spsl"]["Q1"] = "д";
+$symbols["spsl"]["R1"] = "г";
+$symbols["spsl"]["B1"] = "в";
+$symbols["spsl"]["N1"] = "б";
+$symbols["spsl"]["P1"] = "а";
 
-$simbols["spsl"]["k0"] = "Н";
-$simbols["spsl"]["q0"] = "Й";
-$simbols["spsl"]["r0"] = "Л";
-$simbols["spsl"]["b0"] = "К";
-$simbols["spsl"]["n0"] = "М";
-$simbols["spsl"]["p0"] = "И";
+$symbols["spsl"]["k0"] = "Н";
+$symbols["spsl"]["q0"] = "Й";
+$symbols["spsl"]["r0"] = "Л";
+$symbols["spsl"]["b0"] = "К";
+$symbols["spsl"]["n0"] = "М";
+$symbols["spsl"]["p0"] = "И";
 
-$simbols["spsl"]["k1"] = "н";
-$simbols["spsl"]["q1"] = "й";
-$simbols["spsl"]["r1"] = "л";
-$simbols["spsl"]["b1"] = "к";
-$simbols["spsl"]["n1"] = "м";
-$simbols["spsl"]["p1"] = "и";
+$symbols["spsl"]["k1"] = "н";
+$symbols["spsl"]["q1"] = "й";
+$symbols["spsl"]["r1"] = "л";
+$symbols["spsl"]["b1"] = "к";
+$symbols["spsl"]["n1"] = "м";
+$symbols["spsl"]["p1"] = "и";
 
-$simbols["spsl"]["X0"] = 'x';
-$simbols["spsl"]["X1"] = 'X';
+$symbols["spsl"]["X0"] = 'x';
+$symbols["spsl"]["X1"] = 'X';
 
-$simbols["spsl"]["delta"] = 0;
+$symbols["spsl"]["delta"] = 0;
