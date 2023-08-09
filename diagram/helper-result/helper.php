@@ -55,7 +55,7 @@ foreach (glob("../fonts/*.ttf") as $font) {
     }
 
     $file_location = "./{$font_name}.png";
-    imagepng($image, $file_location, 0, NULL);
+    imagepng($image, $file_location, 0);
     echo "template created for font <a href='{$file_location}'><b>{$font_name}</b></a><br />";
 }
 

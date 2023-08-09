@@ -73,7 +73,7 @@ class Diagram
 
 
         global $symbols;
-        if (!file_exists( LIBRARY_PATH . "/{$this->style}.php")) {
+        if (!file_exists( FONT_DESC_PATH . "/{$this->style}.php")) {
             $this->style = "alpha";
         }
         $this->symbols = $symbols[$this->style];
@@ -90,31 +90,28 @@ class Diagram
 
     /**
      * returns true color image
-     * @global array $colors
      * @return GdImage
      */
     public function toImage()
     {
-        global $colors;
-
         $d = imagecreatetruecolor($this->size + 1, $this->size + 1); // +1 fix
         $darkColor = imagecolorallocate(
             $d,
-            $colors[$this->color][0],
-            $colors[$this->color][1],
-            $colors[$this->color][2]
+            COLOR[$this->color][0],
+            COLOR[$this->color][1],
+            COLOR[$this->color][2]
         );
         $lightColor = imagecolorallocate(
             $d,
-            $colors[$this->color . "shift"][0],
-            $colors[$this->color . "shift"][1],
-            $colors[$this->color . "shift"][2]
+            COLOR[$this->color . "shift"][0],
+            COLOR[$this->color . "shift"][1],
+            COLOR[$this->color . "shift"][2]
         );
         $whiteColor = imagecolorallocate(
             $d,
-            $colors["white"][0],
-            $colors["white"][1],
-            $colors["white"][2]
+            COLOR["white"][0],
+            COLOR["white"][1],
+            COLOR["white"][2]
         );
 
         imagefill($d, 0, 0, $darkColor);
@@ -146,7 +143,7 @@ class Diagram
             );
         }
 
-        if ($this->solid == true) {
+        if ($this->solid) {
             for ($i = 0; $i != 8; ++$i) {
                 for ($j = 0; $j !== 8; ++$j) {
                     if ($i % 2 !== $j % 2) {
@@ -175,7 +172,7 @@ class Diagram
         $fix = px2pt($this->symbols["delta"] * $this->fieldSize);
         for ($i = 0; $i != 8; ++$i) {
             for ($j = 0; $j != 8; ++$j) {
-                $index = ($i % 2 === $j % 2 || $this->solid == true) ? "0" : "1";
+                $index = ($i % 2 === $j % 2 || $this->solid) ? "0" : "1";
                 $char = $this->board->board[$i][$j];
                 if ($char === " ") {
                     $char = ($index === "0") ? $this->symbols["-"] : $this->symbols["+"];
@@ -187,9 +184,9 @@ class Diagram
                     px2pt($this->fieldSize),
                     0,
                     $j * $this->fieldSize + $this->margin,
-                    ($i + 1) * $this->fieldSize + $this->margin + $fix,
+                    ($i + 1) * $this->fieldSize + $this->margin + (int)$fix,
                     $darkColor,
-                    LIBRARY_PATH . "fonts/{$this->style}.ttf",
+                    FONTS_PATH . "{$this->style}.ttf",
                     $char
                 );
             }

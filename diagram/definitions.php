@@ -1,10 +1,12 @@
 <?php
 
 const LIBRARY_PATH = __DIR__ . "/";
+const FONTS_PATH = LIBRARY_PATH . "/fonts/";
+const FONT_DESC_PATH = __DIR__ . "/font-desc/";
 const DOTS_PER_INCH = 300;
 const MM_PER_INCH = 25.4;
 
-$colors = [
+const COLOR = [
     "black" => [0, 0, 0],
     "red" => [255, 0, 0],
     "green" => [0, 255, 0],

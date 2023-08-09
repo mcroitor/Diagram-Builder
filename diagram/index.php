@@ -11,10 +11,10 @@ $options = array(
     "style" => strtolower(filter_input(INPUT_GET, "style", FILTER_SANITIZE_FULL_SPECIAL_CHARS) ?? "alpha"),
     "solid" => filter_input(INPUT_GET, "solid", FILTER_VALIDATE_BOOLEAN),
     "color" => strtolower(filter_input(INPUT_GET, "color", FILTER_SANITIZE_FULL_SPECIAL_CHARS) ?? "black"),
-    "dbl_margin" => filter_input(INPUT_GET, "double", FILTER_VALIDATE_BOOLEAN)
+    "doubledMargin" => filter_input(INPUT_GET, "double", FILTER_VALIDATE_BOOLEAN)
 );
 
-require './diagram.class.php';
+require_once __DIR__ . '/diagram.class.php';
 
 $d = new Diagram($fen, $options);
 

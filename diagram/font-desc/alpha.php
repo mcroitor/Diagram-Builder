@@ -1,61 +1,62 @@
 <?php
-$symbols["alpha"] = array();
-
-$symbols["alpha"]["8"] = "4";
-$symbols["alpha"]["7"] = "4";
-$symbols["alpha"]["6"] = "4";
-$symbols["alpha"]["5"] = "4";
-$symbols["alpha"]["4"] = "4";
-$symbols["alpha"]["3"] = "4";
-$symbols["alpha"]["2"] = "4";
-$symbols["alpha"]["1"] = "4";
-
-$symbols["alpha"]["|"] = "5";
-$symbols["alpha"]["top"] = "1222222223"; //"!\"\"\"\"\"\"\"\"#";
-$symbols["alpha"]["bottom"] = "6777777778";
-$symbols["alpha"]["/"] = "4";
-
-$symbols["alpha"]["-"] = "-";
-$symbols["alpha"]["+"] = "+";
-
-$symbols["alpha"]["a"] = "a";
-$symbols["alpha"]["b"] = "b";
-$symbols["alpha"]["c"] = "c";
-$symbols["alpha"]["d"] = "d";
-$symbols["alpha"]["e"] = "e";
-$symbols["alpha"]["f"] = "f";
-$symbols["alpha"]["g"] = "g";
-$symbols["alpha"]["h"] = "h";
-
-$symbols["alpha"]["K0"] = "k";
-$symbols["alpha"]["Q0"] = "q";
-$symbols["alpha"]["R0"] = "r";
-$symbols["alpha"]["B0"] = "b";
-$symbols["alpha"]["N0"] = "h";
-$symbols["alpha"]["P0"] = "p";
-
-$symbols["alpha"]["K1"] = "K";
-$symbols["alpha"]["Q1"] = "Q";
-$symbols["alpha"]["R1"] = "R";
-$symbols["alpha"]["B1"] = "B";
-$symbols["alpha"]["N1"] = "H";
-$symbols["alpha"]["P1"] = "P";
-
-$symbols["alpha"]["k0"] = "l";
-$symbols["alpha"]["q0"] = "w";
-$symbols["alpha"]["r0"] = "t";
-$symbols["alpha"]["b0"] = "n";
-$symbols["alpha"]["n0"] = "j";
-$symbols["alpha"]["p0"] = "o";
-
-$symbols["alpha"]["k1"] = "L";
-$symbols["alpha"]["q1"] = "W";
-$symbols["alpha"]["r1"] = "T";
-$symbols["alpha"]["b1"] = "N";
-$symbols["alpha"]["n1"] = "J";
-$symbols["alpha"]["p1"] = "O";
-
-$symbols["alpha"]["X0"] = 'x';
-$symbols["alpha"]["X1"] = 'X';
-
-$symbols["alpha"]["delta"] = 0;
+// alpha font
+$symbols["alpha"] = [
+    "8" => "4",
+    "7" => "4",
+    "6" => "4",
+    "5" => "4",
+    "4" => "4",
+    "3" => "4",
+    "2" => "4",
+    "1" => "4",
+    
+    "|" => "5",
+    "top" => "1222222223", //"!\"\"\"\"\"\"\"\"#",
+    "bottom" => "6777777778",
+    "/" => "4",
+    
+    "-" => "-",
+    "+" => "+",
+    
+    "a" => "a",
+    "b" => "b",
+    "c" => "c",
+    "d" => "d",
+    "e" => "e",
+    "f" => "f",
+    "g" => "g",
+    "h" => "h",
+    
+    "K0" => "k",
+    "Q0" => "q",
+    "R0" => "r",
+    "B0" => "b",
+    "N0" => "h",
+    "P0" => "p",
+    
+    "K1" => "K",
+    "Q1" => "Q",
+    "R1" => "R",
+    "B1" => "B",
+    "N1" => "H",
+    "P1" => "P",
+    
+    "k0" => "l",
+    "q0" => "w",
+    "r0" => "t",
+    "b0" => "n",
+    "n0" => "j",
+    "p0" => "o",
+    
+    "k1" => "L",
+    "q1" => "W",
+    "r1" => "T",
+    "b1" => "N",
+    "n1" => "J",
+    "p1" => "O",
+    
+    "X0" => "x",
+    "X1" => "X",
+    
+    "delta" => 0,
+];
