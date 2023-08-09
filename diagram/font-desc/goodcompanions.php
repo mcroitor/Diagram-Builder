@@ -46,14 +46,14 @@ $symbols["goodcompanions"] = [
     "r0" => chr(89),
     "b0" => chr(111),
     "n0" => chr(171),
-    "p0" => chr(187),
+    "p0" => chr(189),
     
     "k1" => chr(51),
     "q1" => chr(74),
     "r1" => chr(90),
     "b1" => chr(112),
     "n1" => chr(172),
-    "p1" => chr(187),
+    "p1" => chr(190),
     
     "X0" => chr(252),
     "X1" => chr(253),
