@@ -35,4 +35,4 @@ __This is not a bug, this is a feature!__
  * When you use _solid_ option, pieces has the same inner color as dark fields.
 This is not a bug, this is a constructive problem related with TTF fonts. Diagram
 creation is based at font, font is just a lot of shapes, basically drowed by black.
- * _Good Companions_ -- nice font, but need to be offset fixed.
+ * ~~_Good Companions_ -- nice font, but need to be offset fixed.~~
